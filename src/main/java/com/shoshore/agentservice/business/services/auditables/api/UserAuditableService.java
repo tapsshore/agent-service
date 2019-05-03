@@ -1,6 +1,6 @@
 package com.shoshore.agentservice.business.services.auditables.api;
 
-import com.shoshore.agentservice.domain.entities.User;
+import com.shoshore.agentservice.domain.User;
 import com.shoshore.agentservice.repository.api.UserRepository;
 import com.shoshore.agentservice.utils.audit.trail.utils.Auditable;
 import com.shoshore.agentservice.utils.wrapper.UserWrapper;

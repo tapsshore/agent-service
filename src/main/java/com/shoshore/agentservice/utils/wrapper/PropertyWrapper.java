@@ -1,6 +1,5 @@
 package com.shoshore.agentservice.utils.wrapper;
 
-import com.shoshore.agentservice.utils.enums.PropertyStatus;
 import com.shoshore.agentservice.utils.enums.PropertyType;
 
 import java.math.BigDecimal;

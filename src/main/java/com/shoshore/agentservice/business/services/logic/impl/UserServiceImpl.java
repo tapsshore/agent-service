@@ -3,7 +3,7 @@ package com.shoshore.agentservice.business.services.logic.impl;
 import com.shoshore.agentservice.business.criteria.mapper.DtoMapper;
 import com.shoshore.agentservice.business.services.auditables.api.UserAuditableService;
 import com.shoshore.agentservice.business.services.logic.api.UserService;
-import com.shoshore.agentservice.domain.entities.User;
+import com.shoshore.agentservice.domain.User;
 import com.shoshore.agentservice.repository.api.UserRepository;
 import com.shoshore.agentservice.utils.common.i18.api.MessageService;
 import com.shoshore.agentservice.utils.enums.I18Code;
@@ -20,6 +20,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Optional;
 import java.util.stream.Stream;
+
 @SuppressWarnings("Duplicates")
 
 public class UserServiceImpl implements UserService {

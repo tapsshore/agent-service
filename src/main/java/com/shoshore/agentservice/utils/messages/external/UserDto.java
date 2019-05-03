@@ -1,7 +1,6 @@
 package com.shoshore.agentservice.utils.messages.external;
 
 import java.util.Date;
-import java.util.Locale;
 
 public class UserDto {
     private Long id;

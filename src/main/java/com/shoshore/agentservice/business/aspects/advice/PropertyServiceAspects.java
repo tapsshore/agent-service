@@ -3,12 +3,12 @@ package com.shoshore.agentservice.business.aspects.advice;
 import com.shoshore.agentservice.business.criteria.mapper.DtoMapper;
 import com.shoshore.agentservice.business.services.logic.api.PropertyService;
 import com.shoshore.agentservice.business.services.validations.api.PropertyValidation;
-import com.shoshore.agentservice.domain.entities.Property;
+import com.shoshore.agentservice.domain.Property;
 import com.shoshore.agentservice.utils.common.i18.api.MessageService;
 import com.shoshore.agentservice.utils.commonResponse.CommonResponse;
 import com.shoshore.agentservice.utils.enums.I18Code;
 import com.shoshore.agentservice.utils.enums.UserAction;
-import com.shoshore.agentservice.utils.exeptions.BusinessException;
+import com.shoshore.agentservice.utils.exceptions.BusinessException;
 import com.shoshore.agentservice.utils.messages.external.PropertyDto;
 import com.shoshore.agentservice.utils.messages.internal.ServiceResponse;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -29,8 +29,8 @@ public class PropertyServiceAspects {
     private MessageService messageService;
 
     public PropertyServiceAspects(PropertyValidation propertyValidation,
-                             DtoMapper dtoMapper,
-                             MessageService messageService) {
+                                  DtoMapper dtoMapper,
+                                  MessageService messageService) {
         this.propertyValidation = propertyValidation;
         this.dtoMapper = dtoMapper;
         this.messageService = messageService;

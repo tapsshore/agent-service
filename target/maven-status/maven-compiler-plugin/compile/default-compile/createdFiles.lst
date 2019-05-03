@@ -1,0 +1,10 @@
+com/shoshore/agentservice/domain/DomainMarkerInterface.class
+com/shoshore/agentservice/domain/User.class
+com/shoshore/agentservice/utils/enums/UserStatus.class
+com/shoshore/agentservice/repository/api/DataRepositoryMarkerInterface.class
+com/shoshore/agentservice/utils/enums/PropertyType.class
+com/shoshore/agentservice/utils/enums/PropertyStatus.class
+com/shoshore/agentservice/utils/keygen/KeyGen.class
+com/shoshore/agentservice/domain/Property.class
+com/shoshore/agentservice/repository/config/DataConfig.class
+com/shoshore/agentservice/main/AgentSystemApplication.class

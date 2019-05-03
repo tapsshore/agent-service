@@ -2,7 +2,7 @@ package com.shoshore.agentservice.business.services.auditables.impl;
 
 import com.shoshore.agentservice.business.criteria.specs.PropertySpecification;
 import com.shoshore.agentservice.business.services.auditables.api.PropertyAuditableService;
-import com.shoshore.agentservice.domain.entities.Property;
+import com.shoshore.agentservice.domain.Property;
 import com.shoshore.agentservice.repository.api.PropertyRepository;
 import com.shoshore.agentservice.utils.enums.PropertyStatus;
 import com.shoshore.agentservice.utils.wrapper.PropertyWrapper;

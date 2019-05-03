@@ -1,7 +1,7 @@
 package com.shoshore.agentservice.business.criteria.specs;
 
 import com.shoshore.agentservice.business.criteria.builder.PropertyCriteriaBuilder;
-import com.shoshore.agentservice.domain.entities.Property;
+import com.shoshore.agentservice.domain.Property;
 import com.shoshore.agentservice.utils.wrapper.PropertyWrapper;
 import org.springframework.data.jpa.domain.Specification;
 

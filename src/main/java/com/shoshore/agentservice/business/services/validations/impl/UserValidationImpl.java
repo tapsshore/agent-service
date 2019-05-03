@@ -2,7 +2,7 @@ package com.shoshore.agentservice.business.services.validations.impl;
 
 import com.shoshore.agentservice.business.services.auditables.api.UserAuditableService;
 import com.shoshore.agentservice.business.services.validations.api.UserValidation;
-import com.shoshore.agentservice.domain.entities.User;
+import com.shoshore.agentservice.domain.User;
 import com.shoshore.agentservice.utils.common.i18.api.MessageService;
 import com.shoshore.agentservice.utils.commonResponse.CommonResponse;
 import com.shoshore.agentservice.utils.enums.I18Code;

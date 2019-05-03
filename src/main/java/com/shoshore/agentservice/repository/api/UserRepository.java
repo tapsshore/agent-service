@@ -1,6 +1,6 @@
 package com.shoshore.agentservice.repository.api;
 
-import com.shoshore.agentservice.domain.entities.User;
+import com.shoshore.agentservice.domain.User;
 import com.shoshore.agentservice.utils.enums.UserStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;

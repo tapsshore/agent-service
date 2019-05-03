@@ -1,6 +1,6 @@
 package com.shoshore.agentservice.business.services.auditables.api;
 
-import com.shoshore.agentservice.domain.entities.Property;
+import com.shoshore.agentservice.domain.Property;
 import com.shoshore.agentservice.repository.api.PropertyRepository;
 import com.shoshore.agentservice.utils.audit.trail.utils.Auditable;
 import com.shoshore.agentservice.utils.enums.PropertyStatus;

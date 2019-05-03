@@ -12,7 +12,7 @@ public interface PropertyService {
 
     ServiceResponse findPropertyById(Long id, Locale locale);
 
-    ServiceResponse findPropertiesByPropertyStatus(PropertyStatus propertyStatus, Locale  locale);
+    ServiceResponse findPropertiesByPropertyStatus(PropertyStatus propertyStatus, Locale locale);
 
     ServiceResponse findPropertiesByCity(String city, Locale locale);
 

@@ -1,4 +1,4 @@
-package com.shoshore.agentservice.utils.exeptions;
+package com.shoshore.agentservice.utils.exceptions;
 
 import java.util.Optional;
 

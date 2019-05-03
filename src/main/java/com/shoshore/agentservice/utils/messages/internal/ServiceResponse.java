@@ -1,9 +1,7 @@
 package com.shoshore.agentservice.utils.messages.internal;
 
-import com.shoshore.agentservice.domain.entities.Job;
-import com.shoshore.agentservice.domain.entities.Property;
-import com.shoshore.agentservice.domain.entities.User;
-import com.shoshore.agentservice.domain.entities.Vehicle;
+import com.shoshore.agentservice.domain.Property;
+import com.shoshore.agentservice.domain.User;
 
 import java.util.List;
 
@@ -16,8 +14,7 @@ public class ServiceResponse<T> {
     private boolean success;
     private String message;
     private User user;
-    private Job job;
-    private Vehicle vehicle;
+
     private Property property;
     private T result;
     private List<T> list;
@@ -54,21 +51,6 @@ public class ServiceResponse<T> {
         this.user = user;
     }
 
-    public Job getJob() {
-        return job;
-    }
-
-    public void setJob(Job job) {
-        this.job = job;
-    }
-
-    public Vehicle getVehicle() {
-        return vehicle;
-    }
-
-    public void setVehicle(Vehicle vehicle) {
-        this.vehicle = vehicle;
-    }
 
     public Property getProperty() {
         return property;
@@ -93,6 +75,7 @@ public class ServiceResponse<T> {
     public void setList(List<T> list) {
         this.list = list;
     }
+
     public ServiceResponse<T> buildSuccessResponse(String message) {
         this.statusCode = SUCCESS_INT_VALUE;
         this.success = true;

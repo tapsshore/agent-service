@@ -8,53 +8,28 @@ public class BusinessPointCuts {
 
     @Pointcut("execution(* com.shoshore.agentservice.business." +
             "services.logic.api.UserService.create(..))")
-    public void handleUserCreation(){
+    public void handleUserCreation() {
 
     }
 
     @Pointcut("execution(* com.shoshore.agentservice.business." +
             "services.logic.api.UserService.edit(..))")
-    public void handleUserEdit(){
-
-    }
-
-
-    @Pointcut("execution(* com.shoshore.agentservice.business." +
-            "services.logic.api.JobService.create(..))")
-    public void handleJobCreation(){
-
-    }
-
-    @Pointcut("execution(* com.shoshore.agentservice.business." +
-            "services.logic.api.JobService.edit(..))")
-    public void handleJobEdit(){
+    public void handleUserEdit() {
 
     }
 
 
     @Pointcut("execution(* com.shoshore.agentservice.business." +
             "services.logic.api.PropertyService.create(..))")
-    public void handlePropertyCreation(){
+    public void handlePropertyCreation() {
 
     }
 
     @Pointcut("execution(* com.shoshore.agentservice.business." +
             "services.logic.api.PropertyService.edit(..))")
-    public void handlePropertyEdit(){
+    public void handlePropertyEdit() {
 
     }
 
-
-    @Pointcut("execution(* com.shoshore.agentservice.business." +
-            "services.logic.api.VehicleService.create(..))")
-    public void handleVehicleCreation(){
-
-    }
-
-    @Pointcut("execution(* com.shoshore.agentservice.business." +
-            "services.logic.api.VehicleService.edit(..))")
-    public void handleVehicleEdit(){
-
-    }
 
 }

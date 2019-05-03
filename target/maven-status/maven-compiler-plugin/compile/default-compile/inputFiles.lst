@@ -1,0 +1,10 @@
+/home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/utils/enums/PropertyType.java
+/home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/utils/keygen/KeyGen.java
+/home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/domain/Property.java
+/home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/repository/config/DataConfig.java
+/home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/domain/User.java
+/home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/domain/DomainMarkerInterface.java
+/home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/utils/enums/PropertyStatus.java
+/home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/repository/api/DataRepositoryMarkerInterface.java
+/home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/utils/enums/UserStatus.java
+/home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/main/AgentSystemApplication.java

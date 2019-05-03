@@ -1,6 +1,6 @@
 package com.shoshore.agentservice.business.services.validations.api;
 
-import com.shoshore.agentservice.domain.entities.Property;
+import com.shoshore.agentservice.domain.Property;
 import com.shoshore.agentservice.utils.commonResponse.CommonResponse;
 import com.shoshore.agentservice.utils.enums.UserAction;
 

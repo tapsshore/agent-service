@@ -1,6 +1,6 @@
 package com.shoshore.agentservice.business.criteria.builder;
 
-import com.shoshore.agentservice.domain.entities.Property;
+import com.shoshore.agentservice.domain.Property;
 import com.shoshore.agentservice.utils.constants.Constants;
 import com.shoshore.agentservice.utils.criteria.CriteriaUtils;
 import com.shoshore.agentservice.utils.dates.DateUtils;
@@ -11,12 +11,9 @@ import org.hibernate.engine.spi.Status;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
-
 import java.util.Date;
 
-import static com.shoshore.agentservice.utils.criteria.CriteriaConstants.CREATION_DATE;
-import static com.shoshore.agentservice.utils.criteria.CriteriaConstants.ID;
-import static com.shoshore.agentservice.utils.criteria.CriteriaConstants.STATUS;
+import static com.shoshore.agentservice.utils.criteria.CriteriaConstants.*;
 
 @SuppressWarnings("Duplicates")
 public class PropertyCriteriaBuilder {

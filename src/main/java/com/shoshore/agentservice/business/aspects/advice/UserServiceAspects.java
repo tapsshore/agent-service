@@ -1,14 +1,14 @@
-package com.shoshore.agentservice.business.aspects.pointcuts;
+package com.shoshore.agentservice.business.aspects.advice;
 
 import com.shoshore.agentservice.business.criteria.mapper.DtoMapper;
 import com.shoshore.agentservice.business.services.logic.api.UserService;
 import com.shoshore.agentservice.business.services.validations.api.UserValidation;
-import com.shoshore.agentservice.domain.entities.User;
+import com.shoshore.agentservice.domain.User;
 import com.shoshore.agentservice.utils.common.i18.api.MessageService;
 import com.shoshore.agentservice.utils.commonResponse.CommonResponse;
 import com.shoshore.agentservice.utils.enums.I18Code;
 import com.shoshore.agentservice.utils.enums.UserAction;
-import com.shoshore.agentservice.utils.exeptions.BusinessException;
+import com.shoshore.agentservice.utils.exceptions.BusinessException;
 import com.shoshore.agentservice.utils.messages.external.UserDto;
 import com.shoshore.agentservice.utils.messages.internal.ServiceResponse;
 import org.aspectj.lang.ProceedingJoinPoint;

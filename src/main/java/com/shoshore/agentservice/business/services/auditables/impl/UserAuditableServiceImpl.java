@@ -2,7 +2,7 @@ package com.shoshore.agentservice.business.services.auditables.impl;
 
 import com.shoshore.agentservice.business.criteria.specs.UserSpecification;
 import com.shoshore.agentservice.business.services.auditables.api.UserAuditableService;
-import com.shoshore.agentservice.domain.entities.User;
+import com.shoshore.agentservice.domain.User;
 import com.shoshore.agentservice.repository.api.UserRepository;
 import com.shoshore.agentservice.utils.wrapper.UserWrapper;
 import org.springframework.data.jpa.domain.Specification;
