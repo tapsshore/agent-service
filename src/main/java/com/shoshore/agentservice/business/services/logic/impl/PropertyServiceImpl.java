@@ -60,7 +60,7 @@ public class PropertyServiceImpl implements PropertyService {
     public ServiceResponse findPropertiesByPropertyStatus(PropertyStatus propertyStatus, Locale locale) {
         final ServiceResponse serviceResponse = new ServiceResponse();
 
-        final List<Property> propertyList = propertyAuditableService.findAllByPropertyStatus(propertyStatus, locale);
+        final List<Property> propertyList = propertyAuditableService.findByPropertyStatus(propertyStatus, locale);
 
         final boolean isPropertyFound = propertyList.isEmpty();
         if (isPropertyFound) {

@@ -228,7 +228,7 @@ public class UserServiceImpl implements UserService {
     public ServiceResponse findUsersByStatus(UserStatus userStatus, Locale locale) {
         final ServiceResponse serviceResponse = new ServiceResponse();
 
-        final List<User> userSearched = userRepository.findUserByStatus(userStatus, locale);
+        final List<User> userSearched = userRepository.findByUserStatus(userStatus);
 
         final boolean isUserFound = userSearched.isEmpty();
         if (!isUserFound) {

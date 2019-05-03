@@ -18,7 +18,7 @@ public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificat
 
     Optional<User> findUserByMobileNumber(String mobileNumber);
 
-    List<User> findUserByStatus(UserStatus userStatus, Locale locale);
+    List<User> findByUserStatus(UserStatus userStatus);
 
     List<User> findAll();
 

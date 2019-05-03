@@ -13,7 +13,7 @@ public interface PropertyRepository extends JpaRepository<Property, Long>, JpaSp
 
     Optional<Property> findPropertyById(Long id);
 
-    List<Property> findPropertiesByPropertyStatus(PropertyStatus propertyStatus, Locale locale);
+    List<Property> findByPropertyStatus(PropertyStatus propertyStatus);
 
     List<Property> findAll();
 

@@ -32,8 +32,8 @@ public class PropertyAuditableServiceImpl implements PropertyAuditableService {
     }
 
     @Override
-    public List<Property> findAllByPropertyStatus(PropertyStatus propertyStatus, Locale locale) {
-        return propertyRepository.findPropertiesByPropertyStatus(propertyStatus, locale);
+    public List<Property> findByPropertyStatus(PropertyStatus propertyStatus, Locale locale) {
+        return propertyRepository.findByPropertyStatus(propertyStatus);
     }
 
     @Override

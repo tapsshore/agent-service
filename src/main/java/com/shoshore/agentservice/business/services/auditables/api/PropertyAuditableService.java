@@ -19,7 +19,7 @@ public interface PropertyAuditableService {
 
     Optional<Property> findPropertyById(Long id, Locale locale);
 
-    List<Property> findAllByPropertyStatus(PropertyStatus propertyStatus, Locale locale);
+    List<Property> findByPropertyStatus(PropertyStatus propertyStatus, Locale locale);
 
     void delete(Long id, Locale locale, String username);
 

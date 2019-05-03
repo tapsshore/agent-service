@@ -3,6 +3,7 @@ com/shoshore/agentservice/api/config/ApiServiceConfig.class
 com/shoshore/agentservice/business/services/validations/impl/PropertyValidationImpl.class
 com/shoshore/agentservice/api/resource/PropertyResource.class
 com/shoshore/agentservice/business/services/auditables/api/UserAuditableService.class
+com/shoshore/agentservice/AgentSystemApplication.class
 com/shoshore/agentservice/utils/criteria/CriteriaUtils.class
 com/shoshore/agentservice/utils/dates/DateUtils.class
 com/shoshore/agentservice/domain/DomainMarkerInterface.class
@@ -46,7 +47,6 @@ com/shoshore/agentservice/api/processor/impl/UserProcessorImpl.class
 com/shoshore/agentservice/domain/Property.class
 com/shoshore/agentservice/business/config/BusinessConfig.class
 com/shoshore/agentservice/utils/common/i18/impl/MessageServiceImpl.class
-com/shoshore/agentservice/main/AgentSystemApplication.class
 com/shoshore/agentservice/utils/exceptions/BusinessException.class
 com/shoshore/agentservice/utils/wrapper/PropertyWrapper.class
 com/shoshore/agentservice/utils/enums/I18Code.class
