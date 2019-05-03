@@ -1,9 +1,7 @@
 package com.shoshore.agentservice.api.messages;
 
-import com.shoshore.agentservice.utils.messages.external.JobDto;
 import com.shoshore.agentservice.utils.messages.external.PropertyDto;
 import com.shoshore.agentservice.utils.messages.external.UserDto;
-import com.shoshore.agentservice.utils.messages.external.VehicleDto;
 
 import java.util.List;
 
@@ -20,17 +18,11 @@ public class Response {
 
     private UserDto userDto;
 
-    private  List<VehicleDto> vehicleDtoList;
-
-    private VehicleDto vehicleDto;
 
     private List<PropertyDto> propertyDtoList;
 
     private PropertyDto propertyDto;
 
-    private List<JobDto> jobDtoList;
-
-    private JobDto jobDto;
 
     public boolean isSuccess() {
         return success;
@@ -80,21 +72,7 @@ public class Response {
         this.userDto = userDto;
     }
 
-    public List<VehicleDto> getVehicleDtoList() {
-        return vehicleDtoList;
-    }
 
-    public void setVehicleDtoList(List<VehicleDto> vehicleDtoList) {
-        this.vehicleDtoList = vehicleDtoList;
-    }
-
-    public VehicleDto getVehicleDto() {
-        return vehicleDto;
-    }
-
-    public void setVehicleDto(VehicleDto vehicleDto) {
-        this.vehicleDto = vehicleDto;
-    }
 
     public List<PropertyDto> getPropertyDtoList() {
         return propertyDtoList;
@@ -112,19 +90,5 @@ public class Response {
         this.propertyDto = propertyDto;
     }
 
-    public List<JobDto> getJobDtoList() {
-        return jobDtoList;
-    }
 
-    public void setJobDtoList(List<JobDto> jobDtoList) {
-        this.jobDtoList = jobDtoList;
-    }
-
-    public JobDto getJobDto() {
-        return jobDto;
-    }
-
-    public void setJobDto(JobDto jobDto) {
-        this.jobDto = jobDto;
-    }
 }

@@ -2,62 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7d4f2fe-c79b-4629-813d-ed94c4c7d768" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/aspects/advice/PropertyServiceAspects.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/aspects/advice/UserServiceAspects.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/aspects/pointcuts/BusinessPointCuts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/config/BusinessAspectConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/config/BusinessConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/builder/PropertyCriteriaBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/builder/UserCriteriaBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/mapper/DtoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/specs/PropertySpecification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/specs/UserSpecification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/auditables/api/PropertyAuditableService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/auditables/api/UserAuditableService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/auditables/impl/PropertyAuditableServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/auditables/impl/UserAuditableServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/api/PropertyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/api/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/PropertyServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/validations/api/PropertyValidation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/validations/api/UserValidation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/validations/impl/PropertyValidationImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/validations/impl/UserValidationImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/repository/api/PropertyRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/repository/api/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/audit.trail.utils/Auditable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/common/i18/api/MessageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/common/i18/impl/MessageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/commonResponse/CommonResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/constants/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/criteria/CriteriaConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/criteria/CriteriaUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/dates/DateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/enums/DataStoreType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/enums/I18Code.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/enums/UserAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/exceptions/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/messages/external/PropertyDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/messages/external/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/messages/internal/ServiceResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/wrapper/PropertyWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/wrapper/UserWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/agent-service.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/config/ApiServiceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/messages/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/agent-service-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/domain/DomainMarkerInterface.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/domain/Property.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/domain/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/main/AgentSystemApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/repository/api/DataRepositoryMarkerInterface.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/repository/config/DataConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/enums/PropertyStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/enums/PropertyType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/enums/UserStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/keygen/KeyGen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/domain/DomainMarkerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/domain/DomainMarkerInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/domain/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/domain/Property.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/repository/config/DataConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/repository/config/DataConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/enums/UserStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/enums/UserStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/keygen/KeyGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/keygen/KeyGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/aspects/advice/PropertyServiceAspects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/aspects/advice/PropertyServiceAspects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/aspects/advice/UserServiceAspects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/aspects/advice/UserServiceAspects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/aspects/pointcuts/BusinessPointCuts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/aspects/pointcuts/BusinessPointCuts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/config/BusinessConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/config/BusinessConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/builder/PropertyCriteriaBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/builder/PropertyCriteriaBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/builder/UserCriteriaBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/builder/UserCriteriaBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/mapper/DtoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/mapper/DtoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/specs/PropertySpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/specs/PropertySpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/specs/UserSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/specs/UserSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/auditables/api/PropertyAuditableService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/auditables/api/PropertyAuditableService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/auditables/api/UserAuditableService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/auditables/api/UserAuditableService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/auditables/impl/PropertyAuditableServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/auditables/impl/PropertyAuditableServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/auditables/impl/UserAuditableServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/auditables/impl/UserAuditableServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/api/PropertyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/api/PropertyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/PropertyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/PropertyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/validations/api/PropertyValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/validations/api/PropertyValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/validations/api/UserValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/validations/api/UserValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/validations/impl/PropertyValidationImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/validations/impl/PropertyValidationImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/validations/impl/UserValidationImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/validations/impl/UserValidationImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/repository/api/PropertyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/repository/api/PropertyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/repository/api/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/repository/api/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/exceptions/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/exceptions/BusinessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/messages/external/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/messages/external/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/messages/internal/ServiceResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/messages/internal/ServiceResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/wrapper/PropertyWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/wrapper/PropertyWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/wrapper/UserWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/wrapper/UserWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/agent-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/agent-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -75,43 +65,44 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/auditables/api/PropertyAuditableService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/PropertyServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            <state relative-caret-position="-699">
+              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/auditables/api/UserAuditableService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+            <state relative-caret-position="-858">
+              <caret line="185" column="55" selection-start-line="185" selection-start-column="55" selection-end-line="185" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/auditables/impl/PropertyAuditableServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/config/ApiServiceConfig.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/config/SwaggerConfig.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/messages/Response.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+            <state relative-caret-position="448">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/auditables/impl/UserAuditableServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/api/PropertyService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/api/PropertyProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
@@ -120,44 +111,17 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/PropertyServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="211" column="52" selection-start-line="211" selection-start-column="52" selection-end-line="211" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="123" column="16" lean-forward="true" selection-start-line="123" selection-start-column="16" selection-end-line="123" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/messages/internal/ServiceResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-919">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/audit.trail.utils/Auditable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/enums/DataStoreType.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/api/UserProcessor.java">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/mapper/DtoMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -187,8 +151,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/api/PropertyService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/api/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/validations/api/UserValidation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/validations/impl/PropertyValidationImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/validations/impl/UserValidationImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/common/i18/impl/MessageServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/messages/external/PropertyDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/messages/external/UserDto.java" />
@@ -202,15 +164,22 @@
         <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/wrapper/UserWrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/builder/PropertyCriteriaBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/builder/UserCriteriaBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/mapper/DtoMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/specs/PropertySpecification.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/specs/UserSpecification.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/auditables/api/PropertyAuditableService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/auditables/api/UserAuditableService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/auditables/impl/PropertyAuditableServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/auditables/impl/UserAuditableServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/validations/impl/PropertyValidationImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/validations/impl/UserValidationImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/PropertyServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/mapper/DtoMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/messages/Response.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/UserProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/resource/PropertyProcessorImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/resource/UserProcessorImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/api/UserProcessor.java" />
       </list>
     </option>
   </component>
@@ -267,124 +236,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="aspects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="aspects" type="462c0819:PsiDirectoryNode" />
-              <item name="advice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="aspects" type="462c0819:PsiDirectoryNode" />
-              <item name="pointcuts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="criteria" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="criteria" type="462c0819:PsiDirectoryNode" />
-              <item name="builder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="criteria" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="criteria" type="462c0819:PsiDirectoryNode" />
-              <item name="specs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="auditables" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="auditables" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -394,153 +245,30 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="auditables" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="processor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="processor" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="processor" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="validations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="audit.trail.utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="dates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="messages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="messages" type="462c0819:PsiDirectoryNode" />
-              <item name="internal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
@@ -563,21 +291,25 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/criteria" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/impl" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.shoshore.agentservice.api.messages" />
       <recent name="com.shoshore.agentservice.utils.enums" />
       <recent name="com.shoshore.agentservice.utils.audit.trail.utils" />
       <recent name="com.shoshore.agentservice.utils.wrapper" />
       <recent name="com.shoshore.agentservice.utils.exceptions" />
-      <recent name="com.shoshore.agentservice.utils.constants" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/api" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/resource" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/config" />
       <recent name="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/criteria" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -611,16 +343,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556888138102</updated>
-      <workItem from="1556888140388" duration="3883000" />
+      <workItem from="1556888140388" duration="5254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3883000" />
+    <option name="totallyTimeSpent" value="5254000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="25" width="960" height="1016" extended-state="4" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -631,7 +362,7 @@
       <window_info id="Designer" order="6" />
       <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.37964988" />
       <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.5535513" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.3515081" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="3" />
@@ -641,7 +372,7 @@
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" />
-      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.31902552" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.31902552" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -688,58 +419,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/keygen/KeyGen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/domain/DomainMarkerInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/domain/Property.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-980">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/enums/UserStatus.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="193" selection-start-line="193" selection-end-line="193" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/main/AgentSystemApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding>
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/repository/api/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -775,12 +454,6 @@
           <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/validations/impl/PropertyValidationImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/validations/impl/UserValidationImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/common/i18/impl/MessageServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor" />
@@ -888,13 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/mapper/DtoMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/specs/PropertySpecification.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -940,13 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/auditables/impl/UserAuditableServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/api/PropertyService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -961,19 +620,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/validations/impl/PropertyValidationImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="123" column="16" lean-forward="true" selection-start-line="123" selection-start-column="16" selection-end-line="123" selection-end-column="16" />
+        <state relative-caret-position="255">
+          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/validations/impl/UserValidationImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/auditables/impl/UserAuditableServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/mapper/DtoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/PropertyServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="211" column="52" selection-start-line="211" selection-start-column="52" selection-end-line="211" selection-end-column="52" />
+        <state relative-caret-position="-699">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-858">
+          <caret line="185" column="55" selection-start-line="185" selection-start-column="55" selection-end-line="185" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/config/ApiServiceConfig.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/PropertyProcessor.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/UserProcessor.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/resource/PropertyProcessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/resource/UserProcessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/impl/UserProcessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/messages/Response.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/api/PropertyProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/api/UserProcessor.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

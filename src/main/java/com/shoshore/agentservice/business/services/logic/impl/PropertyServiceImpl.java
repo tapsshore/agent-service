@@ -209,7 +209,7 @@ public class PropertyServiceImpl implements PropertyService {
         propertyAuditableService.save(property, locale, username);
 
         serviceResponse.setSuccess(true);
-        serviceResponse.setResult(dtoMapper.map(serviceResponse));
+        serviceResponse.setResult(dtoMapper.map(propertyDto));
 
         serviceResponse.setMessage(messageService.getMessage(I18Code.MESSAGE_PROPERTY_DELETE_SUCCESS.getCode(),
                 new String[]{property.getId().toString()}, locale));

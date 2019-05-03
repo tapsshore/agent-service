@@ -183,7 +183,7 @@ public class UserServiceImpl implements UserService {
 
         User user = new User();
 
-        UserDto userDto = dtoMapper.map(user);
+        UserDto userDto = dtoMapper.map(serviceResponse);
 
         user.setId(userDto.getId());
         user.setGender(userDto.getGender());
@@ -240,7 +240,7 @@ public class UserServiceImpl implements UserService {
         }
         serviceResponse.setSuccess(true);
 
-        serviceResponse.setResult(dtoMapper.map(serviceResponse));
+//        serviceResponse.setResult(dtoMapper.map());
 
         serviceResponse.setMessage(messageService.getMessage(I18Code.MESSAGE_USER_SUCCESSFULLY_RETRIEVED.getCode(),
                 new String [] {}, locale));
