@@ -32,7 +32,7 @@ public class UserServiceImpl implements UserService {
     Logger logger = LoggerFactory.getLogger(UserServiceImpl.class.getName());
 
     public UserServiceImpl(MessageService messageService, UserAuditableService userAuditableService,
-                           DtoMapper dtoMapper, UserRepository userRepository, Logger logger) {
+                           DtoMapper dtoMapper, UserRepository userRepository) {
         this.messageService = messageService;
         this.userAuditableService = userAuditableService;
         this.dtoMapper = dtoMapper;

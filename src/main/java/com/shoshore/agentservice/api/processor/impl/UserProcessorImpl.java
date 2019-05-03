@@ -11,15 +11,17 @@ import com.shoshore.agentservice.utils.messages.internal.ServiceResponse;
 import com.shoshore.agentservice.utils.wrapper.UserWrapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Locale;
 
 
 @SuppressWarnings("Duplicates")
 public class UserProcessorImpl implements UserProcessor {
-
+    @Autowired
     private final UserService userService;
     private final DtoMapper dtoMapper;
+    @Autowired
     private final MessageService messageService;
 
     public UserProcessorImpl(UserService userService, DtoMapper dtoMapper, MessageService messageService) {
