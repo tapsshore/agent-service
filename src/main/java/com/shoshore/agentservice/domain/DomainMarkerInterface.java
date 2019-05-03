@@ -1,4 +1,4 @@
-package com.shoshore.agentservice.domain.entities;
+package com.shoshore.agentservice.domain;
 
 public interface DomainMarkerInterface {
 }

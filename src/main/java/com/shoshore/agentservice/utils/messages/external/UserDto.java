@@ -1,45 +1,22 @@
-package com.shoshore.agentservice.domain;
+package com.shoshore.agentservice.utils.messages.external;
 
-import com.shoshore.agentservice.utils.enums.UserStatus;
-import com.shoshore.agentservice.utils.keygen.KeyGen;
-
-import javax.persistence.*;
 import java.util.Date;
-import java.util.Set;
+import java.util.Locale;
 
-
-@Entity
-@Table(name = "users")
-public class User {
-    @Id
+public class UserDto {
     private Long id;
-    @Column(name = "first_name")
     private String firstName;
-    @Column(name = "last_name")
     private String lastName;
-    @Column(name = "date_of_birth")
     private Date dateOfBirth;
-    @Column(name = "id_number")
     private String idNumber;
-    @Column(name = "gender")
     private String gender;
-    @Column(name = "mobile_number")
     private String mobileNumber;
-    @Column(name = "city")
     private String city;
-    @Column(name = "userStatus")
-    @Enumerated(EnumType.STRING)
-    private UserStatus userStatus;
-     @Column(name = "home_address")
     private String homeAddress;
-    @Column(name = "email_address")
     private String emailAddress;
-    @Temporal(TemporalType.TIMESTAMP)
     private Date dateCreated;
-    @Temporal(TemporalType.TIMESTAMP)
     private Date dateLastUpdated;
-    @OneToMany(mappedBy = "user")
-    private Set<Property> properties;
+
 
     public Long getId() {
         return id;
@@ -137,46 +114,9 @@ public class User {
         this.dateLastUpdated = dateLastUpdated;
     }
 
-    public Set<Property> getProperties() {
-        return properties;
-    }
-
-    public void setProperties(Set<Property> properties) {
-        this.properties = properties;
-    }
-
-
-
-    public UserStatus getUserStatus() {
-        return userStatus;
-    }
-
-    public void setUserStatus(UserStatus userStatus) {
-        this.userStatus = userStatus;
-    }
-
-    @PrePersist
-    private void init(){
-        if (id == null || id == 0){
-            id = KeyGen.getUniqueId();
-        }
-        if (dateCreated == null){
-            dateCreated = new Date();
-        }
-        if (dateLastUpdated == null){
-            setDateLastUpdated(new Date());
-        }
-    }
-    @PreUpdate
-    private void reload(){
-        if (dateLastUpdated == null){
-            setDateLastUpdated(new Date());
-        }
-    }
-
     @Override
     public String toString() {
-        return "User{" +
+        return "UserDto{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
@@ -185,13 +125,10 @@ public class User {
                 ", gender='" + gender + '\'' +
                 ", mobileNumber='" + mobileNumber + '\'' +
                 ", city='" + city + '\'' +
-                ", userStatus=" + userStatus +
                 ", homeAddress='" + homeAddress + '\'' +
                 ", emailAddress='" + emailAddress + '\'' +
                 ", dateCreated=" + dateCreated +
                 ", dateLastUpdated=" + dateLastUpdated +
-                ", properties=" + properties +
-
                 '}';
     }
 }

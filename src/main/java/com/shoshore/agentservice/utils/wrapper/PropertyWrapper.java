@@ -1,45 +1,26 @@
-package com.shoshore.agentservice.domain;
+package com.shoshore.agentservice.utils.wrapper;
 
 import com.shoshore.agentservice.utils.enums.PropertyStatus;
 import com.shoshore.agentservice.utils.enums.PropertyType;
-import com.shoshore.agentservice.utils.keygen.KeyGen;
 
-import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
 
-@Entity
-@Table(name = "properties")
-public class Property {
+public class PropertyWrapper {
 
-    @Id
     private Long id;
-    @Column(name = "property_status")
-    @Enumerated(EnumType.STRING)
-    private PropertyStatus propertyStatus;
-    @Column(name = "property_type")
-    @Enumerated(EnumType.STRING)
+    private String propertyStatus;
     private PropertyType propertyType;
-    @Column(name = "number_of_rooms")
     private Integer numberOfRooms;
-    @Column(name = "description")
-    private String description;
-    @Column(name = "city")
     private String city;
-    @Column(name = "country")
     private String country;
-    @Column(name = "suburb")
     private String suburb;
-    @Column(name = "street")
     private String street;
-    @Column(name = "price")
     private BigDecimal price;
-    @Temporal(TemporalType.TIMESTAMP)
     private Date dateCreated;
-    @Temporal(TemporalType.TIMESTAMP)
     private Date dateLastUpdated;
-    @ManyToOne
-    private User user;
+    private Date fromDate;
+    private Date toDate;
 
     public Long getId() {
         return id;
@@ -49,11 +30,11 @@ public class Property {
         this.id = id;
     }
 
-    public PropertyStatus getPropertyStatus() {
+    public String getPropertyStatus() {
         return propertyStatus;
     }
 
-    public void setPropertyStatus(PropertyStatus propertyStatus) {
+    public void setPropertyStatus(String propertyStatus) {
         this.propertyStatus = propertyStatus;
     }
 
@@ -71,14 +52,6 @@ public class Property {
 
     public void setNumberOfRooms(Integer numberOfRooms) {
         this.numberOfRooms = numberOfRooms;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     public String getCity() {
@@ -137,22 +110,29 @@ public class Property {
         this.dateLastUpdated = dateLastUpdated;
     }
 
-    public User getUser() {
-        return user;
+    public Date getFromDate() {
+        return fromDate;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setFromDate(Date fromDate) {
+        this.fromDate = fromDate;
+    }
+
+    public Date getToDate() {
+        return toDate;
+    }
+
+    public void setToDate(Date toDate) {
+        this.toDate = toDate;
     }
 
     @Override
     public String toString() {
-        return "Property{" +
+        return "PropertyWrapper{" +
                 "id=" + id +
-                ", propertyStatus=" + propertyStatus +
+                ", propertyStatus='" + propertyStatus + '\'' +
                 ", propertyType=" + propertyType +
                 ", numberOfRooms=" + numberOfRooms +
-                ", description='" + description + '\'' +
                 ", city='" + city + '\'' +
                 ", country='" + country + '\'' +
                 ", suburb='" + suburb + '\'' +
@@ -160,26 +140,8 @@ public class Property {
                 ", price=" + price +
                 ", dateCreated=" + dateCreated +
                 ", dateLastUpdated=" + dateLastUpdated +
-                ", user=" + user +
+                ", fromDate=" + fromDate +
+                ", toDate=" + toDate +
                 '}';
-    }
-    @PrePersist
-    private void init(){
-        if (id == null || id == 0){
-            id = KeyGen.getUniqueId();
-        }
-        if (dateCreated == null){
-            dateCreated = new Date();
-        }
-        if (dateLastUpdated == null){
-            setDateLastUpdated(new Date());
-        }
-    }
-
-    @PreUpdate
-    private void reload(){
-        if (dateLastUpdated == null){
-            setDateLastUpdated(new Date());
-        }
     }
 }
