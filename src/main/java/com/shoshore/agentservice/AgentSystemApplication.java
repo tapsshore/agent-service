@@ -1,4 +1,4 @@
-package com.shoshore.agentservice;
+package com.shoshore.agentservice.main;
 
 import com.shoshore.agentservice.repository.config.DataConfig;
 import org.springframework.boot.SpringApplication;
