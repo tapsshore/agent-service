@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Optional;
 
-public interface PropertyRepository extends JpaRepository<Property, Long>{
+public interface HomePropertyRepository extends JpaRepository<Property, Long>{
 
     Optional<Property> findPropertyById(Long id);
 

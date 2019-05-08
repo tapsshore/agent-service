@@ -4,7 +4,7 @@ import com.shoshore.agentservice.business.criteria.mapper.DtoMapper;
 import com.shoshore.agentservice.business.services.auditables.api.PropertyAuditableService;
 import com.shoshore.agentservice.business.services.logic.api.PropertyService;
 import com.shoshore.agentservice.domain.Property;
-import com.shoshore.agentservice.repository.api.PropertyRepository;
+import com.shoshore.agentservice.repository.api.HomePropertyRepository;
 import com.shoshore.agentservice.utils.common.i18.api.MessageService;
 import com.shoshore.agentservice.utils.enums.I18Code;
 import com.shoshore.agentservice.utils.enums.PropertyStatus;
@@ -29,11 +29,11 @@ public class PropertyServiceImpl implements PropertyService {
     private PropertyAuditableService propertyAuditableService;
     private DtoMapper dtoMapper;
     @Autowired
-    private PropertyRepository propertyRepository;
+    private HomePropertyRepository propertyRepository;
 
     public PropertyServiceImpl(MessageService messageService,
                                PropertyAuditableService propertyAuditableService,
-                               DtoMapper dtoMapper, PropertyRepository propertyRepository) {
+                               DtoMapper dtoMapper, HomePropertyRepository propertyRepository) {
         this.messageService = messageService;
         this.propertyAuditableService = propertyAuditableService;
         this.dtoMapper = dtoMapper;

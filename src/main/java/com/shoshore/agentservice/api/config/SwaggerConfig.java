@@ -13,28 +13,28 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import java.util.Collections;
 
 
-@Configuration
-    @EnableSwagger2
+//@Configuration
+//    @EnableSwagger2
     public class SwaggerConfig {
-
-
-    private ApiInfo apiInfo() {
-        return new ApiInfo(
-                "AGENT SERVICE REST API",
-                "API FOR AGENT SERVICES MANAGEMENT.",
-                "1.0",
-                "Terms of service",
-                new Contact("TAPS", "https://tawanasolutions.co.zw", "tapsshore@gmail.com"),
-                "License of API", "API license URL", Collections.emptyList());
-    }
-
-        @Bean
-        public Docket api() {
-            return new Docket(DocumentationType.SWAGGER_2)
-                    .select()
-                    .apis(RequestHandlerSelectors.any())
-                    .paths(PathSelectors.any())
-                    .build();
-        }
+//
+//
+//    private ApiInfo apiInfo() {
+//        return new ApiInfo(
+//                "AGENT SERVICE REST API",
+//                "API FOR AGENT SERVICES MANAGEMENT.",
+//                "1.0",
+//                "Terms of service",
+//                new Contact("TAPS", "https://tawanasolutions.co.zw", "tapsshore@gmail.com"),
+//                "License of API", "API license URL", Collections.emptyList());
+//    }
+//
+//        @Bean
+//        public Docket api() {
+//            return new Docket(DocumentationType.SWAGGER_2)
+//                    .select()
+//                    .apis(RequestHandlerSelectors.any())
+//                    .paths(PathSelectors.any())
+//                    .build();
+//        }
 
     }

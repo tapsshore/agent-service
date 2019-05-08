@@ -27,6 +27,8 @@ public interface UserService {
 
     ServiceResponse findAllUsers(Locale locale);
 
+    ServiceResponse save(UserDto userDto, Locale locale, String username);
+
     ServiceResponse findUsersByStatus(UserStatus userStatus, Locale locale);
 
 

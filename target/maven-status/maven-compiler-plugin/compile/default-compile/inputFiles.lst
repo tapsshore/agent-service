@@ -4,10 +4,10 @@
 /home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/business/config/BusinessConfig.java
 /home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/utils/exceptions/BusinessException.java
 /home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/api/processor/impl/PropertyProcessorImpl.java
-/home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/repository/api/PropertyRepository.java
 /home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/business/criteria/specs/UserSpecification.java
 /home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/utils/constants/Constants.java
 /home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/business/services/logic/impl/PropertyServiceImpl.java
+/home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/repository/api/HomePropertyRepository.java
 /home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/repository/api/DataRepositoryMarkerInterface.java
 /home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/api/processor/impl/UserProcessorImpl.java
 /home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/utils/messages/external/PropertyDto.java

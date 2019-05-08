@@ -25,5 +25,7 @@ public interface UserProcessor {
 
     Response updateUser(UserDto userDto, Locale locale, String username);
 
+    Response createUser(UserDto userDto, Locale locale, String username);
+
     Response deleteUser(Long id, Locale locale, String username);
 }

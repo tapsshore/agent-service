@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @Configuration
-@EnableJpaRepositories(basePackageClasses = {DataRepositoryMarkerInterface.class})
-@EntityScan(basePackageClasses = {DomainMarkerInterface.class})
+@EnableJpaRepositories(basePackages = "com.shoshore.agentservice.repository.api")
+@EntityScan(basePackages = {"com.shoshore.agentservice.domain"})
 public class DataConfig {
 }

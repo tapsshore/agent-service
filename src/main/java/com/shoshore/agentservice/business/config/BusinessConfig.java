@@ -9,12 +9,17 @@ import com.shoshore.agentservice.business.services.logic.api.PropertyService;
 import com.shoshore.agentservice.business.services.logic.api.UserService;
 import com.shoshore.agentservice.business.services.logic.impl.PropertyServiceImpl;
 import com.shoshore.agentservice.business.services.logic.impl.UserServiceImpl;
-import com.shoshore.agentservice.repository.api.PropertyRepository;
+import com.shoshore.agentservice.business.services.validations.api.PropertyValidation;
+import com.shoshore.agentservice.business.services.validations.api.UserValidation;
+import com.shoshore.agentservice.business.services.validations.impl.PropertyValidationImpl;
+import com.shoshore.agentservice.business.services.validations.impl.UserValidationImpl;
+import com.shoshore.agentservice.repository.api.HomePropertyRepository;
 import com.shoshore.agentservice.repository.api.UserRepository;
 import com.shoshore.agentservice.repository.config.DataConfig;
 import com.shoshore.agentservice.utils.common.i18.api.MessageService;
 import com.shoshore.agentservice.utils.common.i18.impl.MessageServiceImpl;
 import org.mapstruct.factory.Mappers;
+import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -31,8 +36,8 @@ public class BusinessConfig {
     }
 
     @Bean
-    PropertyAuditableService propertyAuditableService(PropertyRepository propertyRepository){
-        return new PropertyAuditableServiceImpl(propertyRepository);
+    PropertyAuditableService propertyAuditableService(HomePropertyRepository homePropertyRepository) {
+        return new PropertyAuditableServiceImpl(homePropertyRepository);
     }
 
     @Bean
@@ -42,7 +47,7 @@ public class BusinessConfig {
 
     @Bean
     UserService userService(MessageService messageService, UserAuditableService userAuditableService,
-                            DtoMapper dtoMapper, UserRepository userRepository){
+                            DtoMapper dtoMapper, UserRepository userRepository) {
         return new UserServiceImpl(messageService, userAuditableService, dtoMapper, userRepository);
     }
 
@@ -50,17 +55,25 @@ public class BusinessConfig {
     @Bean
     PropertyService propertyService(MessageService messageService,
                                     PropertyAuditableService propertyAuditableService,
-                                    DtoMapper dtoMapper, PropertyRepository propertyRepository){
-        return new PropertyServiceImpl(messageService, propertyAuditableService, dtoMapper , propertyRepository);
+                                    DtoMapper dtoMapper, HomePropertyRepository propertyRepository) {
+        return new PropertyServiceImpl(messageService, propertyAuditableService, dtoMapper, propertyRepository);
     }
 
 
     @Bean
-    MessageService messageService(){
-        return new MessageServiceImpl();
+    MessageService messageService(MessageSource messageSource) {
+        return new MessageServiceImpl(messageSource);
     }
 
 
+    @Bean
+    PropertyValidation propertyValidation(MessageService messageService, PropertyAuditableService propertyAuditableService) {
+        return new PropertyValidationImpl(messageService, propertyAuditableService);
+    }
 
+    @Bean
+    UserValidation userValidation(MessageService messageService, UserAuditableService userAuditableService) {
+        return new UserValidationImpl(messageService, userAuditableService);
+    }
 
 }

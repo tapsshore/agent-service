@@ -8,6 +8,7 @@ com/shoshore/agentservice/utils/criteria/CriteriaUtils.class
 com/shoshore/agentservice/utils/dates/DateUtils.class
 com/shoshore/agentservice/domain/DomainMarkerInterface.class
 com/shoshore/agentservice/api/processor/api/PropertyProcessor.class
+com/shoshore/agentservice/business/criteria/mapper/DtoMapperImpl.class
 com/shoshore/agentservice/business/services/validations/api/PropertyValidation.class
 com/shoshore/agentservice/business/aspects/pointcuts/BusinessPointCuts.class
 com/shoshore/agentservice/business/services/logic/api/PropertyService.class
@@ -15,6 +16,7 @@ com/shoshore/agentservice/business/aspects/advice/PropertyServiceAspects.class
 com/shoshore/agentservice/utils/audit/trail/utils/Auditable.class
 com/shoshore/agentservice/business/services/auditables/api/PropertyAuditableService.class
 com/shoshore/agentservice/utils/enums/PropertyType.class
+com/shoshore/agentservice/repository/api/HomePropertyRepository.class
 com/shoshore/agentservice/repository/api/UserRepository.class
 com/shoshore/agentservice/api/processor/api/UserProcessor.class
 com/shoshore/agentservice/api/messages/Response.class
@@ -54,7 +56,6 @@ com/shoshore/agentservice/business/services/auditables/impl/UserAuditableService
 com/shoshore/agentservice/utils/enums/DataStoreType.class
 com/shoshore/agentservice/business/criteria/builder/PropertyCriteriaBuilder.class
 com/shoshore/agentservice/business/services/validations/impl/PropertyValidationImpl$1.class
-com/shoshore/agentservice/repository/api/PropertyRepository.class
 com/shoshore/agentservice/utils/common/i18/api/MessageService.class
 com/shoshore/agentservice/business/services/validations/api/UserValidation.class
 com/shoshore/agentservice/business/services/validations/impl/UserValidationImpl$1.class

@@ -1,7 +1,7 @@
 package com.shoshore.agentservice.business.services.auditables.api;
 
 import com.shoshore.agentservice.domain.Property;
-import com.shoshore.agentservice.repository.api.PropertyRepository;
+import com.shoshore.agentservice.repository.api.HomePropertyRepository;
 import com.shoshore.agentservice.utils.audit.trail.utils.Auditable;
 import com.shoshore.agentservice.utils.enums.PropertyStatus;
 import com.shoshore.agentservice.utils.wrapper.PropertyWrapper;
@@ -13,7 +13,7 @@ import java.util.stream.Stream;
 
 public interface PropertyAuditableService {
 
-    @Auditable(repositoryClass = PropertyRepository.class, entityClass = Property.class)
+    @Auditable(repositoryClass = HomePropertyRepository.class, entityClass = Property.class)
 
     Property save(Property property, Locale locale, String username);
 

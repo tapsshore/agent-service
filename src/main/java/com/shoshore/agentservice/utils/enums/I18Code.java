@@ -1,16 +1,6 @@
 package com.shoshore.agentservice.utils.enums;
 
 public enum I18Code {
-    MESSAGE_JOB_EDITED_SUCCESSFULLY("messages.job.edited.successfully"),
-    MESSAGE_JOB_NOT_EDITED("messages.job.not.edited"),
-    MESSAGE_JOB_SUCCESSFULLY_RETRIEVED("messages.job.successfully.retrieved"),
-    MESSAGE_JOBS_SUCCESSFULLY_RETRIEVED("messages.jobs.successfully.retrieved"),
-    MESSAGE_JOBS_NOT_FOUND("messages.jobs.not.found"),
-    MESSAGE_JOB_DELETE_SUCCESS("messages.job.delete.success"),
-    MESSAGE_JOB_NOT_CREATED("messages.job.not.created"),
-    MESSAGE_JOB_NOT_FOUND("messages.job.not.found"),
-    MESSAGE_JOB_CREATED_SUCCESSFULLY("messages.job.created.successfully"),
-
 
 
     MESSAGE_PROPERTY_NOT_FOUND("messages.property.not.found"),
@@ -32,41 +22,25 @@ public enum I18Code {
 
 
 
-    MESSAGE_VEHICLE_SUCCESSFULLY_RETRIEVED("messages.vehicle.successfully.retrieved"),
-    MESSAGE_VEHICLE_NOT_FOUND("messages.vehicle.not.found"),
-    MESSAGE_VEHICLE_DELETE_SUCCESS("messages.vehicle.delete.success"),
-    MESSAGE_VEHICLE_NOT_EDITED("messages.vehicle.not.edited"),
-    MESSAGE_VEHICLE_EDITED_SUCCESSFULLY("messages.vehicle.edited.successfully"),
-    MESSAGE_VEHICLE_NOT_CREATED("messages.vehicle.not.created"),
-    MESSAGE_VEHICLE_CREATED_SUCCESSFULLY("messages.vehicle.created.successfully"),
-
-
     MESSAGE_ERROR_ENCOUNTERED("messages.error.encountered"),
     MESSAGE_REQUEST_FAILED("messages.request.failed"),
 
 
-
-
     MESSAGE_REQUEST_NOT_SUPPORTED("messages.request.not.supported"),
-    MESSAGE_JOB_EXISTS("messages.job.exists"),
     MESSAGE_PROPERTY_EXISTS("messages.property.exits"),
     MESSAGE_USER_EXISTS("messages.user.exists"),
-    MESSAGE_VEHICLE_EXISTS("messages.vehicle.exists"),
     MESSAGE_VALIDATION_SUCCESS("messages.validation.success");
-
-
 
 
     private String code;
 
-    private I18Code(String code) {
+     I18Code(String code) {
         this.code = code;
     }
 
     public String getCode() {
         return code;
     }
-
 
 
 }

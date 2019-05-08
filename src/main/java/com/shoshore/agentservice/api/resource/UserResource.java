@@ -22,7 +22,7 @@ import java.util.Locale;
 @RequestMapping(path = "/users")
 
 public class UserResource {
-    @Autowired
+
     private final UserProcessor userProcessor;
 
     public UserResource(UserProcessor userProcessor) {
@@ -48,7 +48,7 @@ public class UserResource {
 
         LOGGER.info("Received User: {}", userDto.toString());
 
-        return userProcessor.updateUser(userDto, locale, username);
+        return userProcessor.createUser(userDto, locale, username);
     }
 
 

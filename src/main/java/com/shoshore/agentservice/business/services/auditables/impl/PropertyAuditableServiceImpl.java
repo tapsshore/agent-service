@@ -3,7 +3,7 @@ package com.shoshore.agentservice.business.services.auditables.impl;
 import com.shoshore.agentservice.business.criteria.specs.PropertySpecification;
 import com.shoshore.agentservice.business.services.auditables.api.PropertyAuditableService;
 import com.shoshore.agentservice.domain.Property;
-import com.shoshore.agentservice.repository.api.PropertyRepository;
+import com.shoshore.agentservice.repository.api.HomePropertyRepository;
 import com.shoshore.agentservice.utils.enums.PropertyStatus;
 import com.shoshore.agentservice.utils.wrapper.PropertyWrapper;
 import org.springframework.data.jpa.domain.Specification;
@@ -15,8 +15,8 @@ import java.util.stream.Stream;
 
 public class PropertyAuditableServiceImpl implements PropertyAuditableService {
 
-    private PropertyRepository propertyRepository;
-    public PropertyAuditableServiceImpl(PropertyRepository propertyRepository){
+    private HomePropertyRepository propertyRepository;
+    public PropertyAuditableServiceImpl(HomePropertyRepository propertyRepository){
         this.propertyRepository = propertyRepository;
     }
 

@@ -165,6 +165,23 @@ public class UserProcessorImpl implements UserProcessor {
     }
 
     @Override
+    public Response createUser(UserDto userDto, Locale locale, String username) {
+        log.info("Create Request in : {}", userDto);
+
+        ServiceResponse<UserDto> serviceResponse = userService.create(userDto, locale, username);
+
+        Response response = new Response();
+
+        response.setSuccess(serviceResponse.isSuccess());
+        response.setMessage(serviceResponse.getMessage());
+        response.setUserDto(serviceResponse.getResult());
+
+        log.info("Response out: {}", response);
+
+        return response;
+    }
+
+    @Override
     public Response deleteUser(Long id, Locale locale, String username) {
         log.info("Delete User Request: {}", id);
 

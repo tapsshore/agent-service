@@ -225,6 +225,18 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public ServiceResponse save(UserDto userDto, Locale locale, String username) {
+        final ServiceResponse response = new ServiceResponse();
+        final User user = dtoMapper.map(userDto);
+        final User userEntity = userAuditableService.save(user, locale, username);
+        response.setSuccess(true);
+        response.setMessage(userEntity.getGender());
+        response.setUser(userEntity);
+
+        return response;
+    }
+
+    @Override
     public ServiceResponse findUsersByStatus(UserStatus userStatus, Locale locale) {
         final ServiceResponse serviceResponse = new ServiceResponse();
 
@@ -249,17 +261,7 @@ public class UserServiceImpl implements UserService {
         return  serviceResponse;
     }
 
-    private ServiceResponse save(UserDto userDto, Locale locale, String username) {
 
-        final ServiceResponse response = new ServiceResponse();
-        final User user = dtoMapper.map(userDto);
-        final User userEntity = userAuditableService.save(user, locale, username);
-        response.setSuccess(true);
-        response.setMessage(userEntity.getGender());
-        response.setUser(userEntity);
-
-        return response;
-    }
     private ServiceResponse populateUserResponse(boolean success,
                                                 User user,
                                                 String narrative) {
