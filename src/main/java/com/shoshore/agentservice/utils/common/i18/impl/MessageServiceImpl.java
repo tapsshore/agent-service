@@ -12,8 +12,10 @@ public class MessageServiceImpl implements MessageService {
         this.messageSource = messageSource;
     }
 
+
     @Override
     public String getMessage(String propertyName, String[] placeholders, Locale locale) {
         return messageSource.getMessage(propertyName, placeholders, locale);
     }
+
 }

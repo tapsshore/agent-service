@@ -10,7 +10,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.shoshore.agent</groupId>
+    <groupId>com.shoshore</groupId>
     <artifactId>agent-service</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>agent-service</name>

@@ -32,9 +32,9 @@ public enum I18Code {
     MESSAGE_VALIDATION_SUCCESS("messages.validation.success");
 
 
-    private String code;
+   private String code;
 
-     I18Code(String code) {
+    private I18Code(String code) {
         this.code = code;
     }
 

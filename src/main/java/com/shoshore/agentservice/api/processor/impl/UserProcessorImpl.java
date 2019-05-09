@@ -1,8 +1,8 @@
 package com.shoshore.agentservice.api.processor.impl;
 
-import com.shoshore.agentservice.api.messages.Response;
 import com.shoshore.agentservice.api.processor.api.UserProcessor;
 import com.shoshore.agentservice.business.criteria.mapper.DtoMapper;
+import com.shoshore.agentservice.business.messages.UserResponse;
 import com.shoshore.agentservice.business.services.logic.api.UserService;
 import com.shoshore.agentservice.utils.common.i18.api.MessageService;
 import com.shoshore.agentservice.utils.enums.UserStatus;
@@ -33,168 +33,168 @@ public class UserProcessorImpl implements UserProcessor {
     Logger log = LoggerFactory.getLogger(UserProcessorImpl.class.getName());
 
     @Override
-    public Response searchUserById(Long id, Locale locale) {
+    public UserResponse searchUserById(Long id, Locale locale) {
         log.info("User Search Request in: {}", id);
 
         ServiceResponse<UserDto> serviceResponse = userService.findUserById(id, locale);
 
 
-        Response response = new Response();
+        UserResponse userResponse = new UserResponse();
 
-        response.setSuccess(serviceResponse.isSuccess());
-        response.setMessage(serviceResponse.getMessage());
-        response.setUserDto(serviceResponse.getResult());
+        userResponse.setSuccess(serviceResponse.isSuccess());
+        userResponse.setMessage(serviceResponse.getMessage());
+        userResponse.setUserDto(serviceResponse.getResult());
 
-        log.info("Response out: {}", response);
+        log.info("Response out: {}", userResponse);
 
-        return response;
+        return userResponse;
     }
 
     @Override
-    public Response search(UserWrapper userWrapper, Locale locale) {
+    public UserResponse search(UserWrapper userWrapper, Locale locale) {
         log.info("Search Request: {}", userWrapper);
 
         ServiceResponse serviceResponse = userService.search(userWrapper, locale);
 
-        Response response = new Response();
+        UserResponse userResponse = new UserResponse();
 
-        response.setSuccess(serviceResponse.isSuccess());
-        response.setMessage(serviceResponse.getMessage());
-        return response;
+        userResponse.setSuccess(serviceResponse.isSuccess());
+        userResponse.setMessage(serviceResponse.getMessage());
+        return userResponse;
     }
 
     @Override
-    public Response retrieveAllUsers(Locale locale) {
+    public UserResponse retrieveAllUsers(Locale locale) {
         log.info("User Search Request to Find All Users");
         ServiceResponse<UserDto> serviceResponse = userService.findAllUsers(locale);
 
-        Response response = new Response();
+        UserResponse userResponse = new UserResponse();
 
-        response.setSuccess(true);
-        response.setMessage(serviceResponse.getMessage());
-        response.setUserDtoList(serviceResponse.getList());
-        log.info("Response out: {}", response);
-        return response;
+        userResponse.setSuccess(true);
+        userResponse.setMessage(serviceResponse.getMessage());
+        userResponse.setUserDtoList(serviceResponse.getList());
+        log.info("Response out: {}", userResponse);
+        return userResponse;
     }
 
     @Override
-    public Response searchUsersByMobileNumber(String mobileNumber, Locale locale) {
+    public UserResponse searchUsersByMobileNumber(String mobileNumber, Locale locale) {
         log.info("User Search Request in: {}", mobileNumber);
 
         ServiceResponse<UserDto> serviceResponse = userService.findUserByMobileNumber(mobileNumber, locale);
 
 
-        Response response = new Response();
+        UserResponse userResponse = new UserResponse();
 
-        response.setSuccess(serviceResponse.isSuccess());
-        response.setMessage(serviceResponse.getMessage());
-        response.setUserDto(serviceResponse.getResult());
+        userResponse.setSuccess(serviceResponse.isSuccess());
+        userResponse.setMessage(serviceResponse.getMessage());
+        userResponse.setUserDto(serviceResponse.getResult());
 
-        log.info("Response out: {}", response);
+        log.info("Response out: {}", userResponse);
 
-        return response;
+        return userResponse;
     }
 
     @Override
-    public Response searchUsersByIdNumber(String idNumber, Locale locale) {
+    public UserResponse searchUsersByIdNumber(String idNumber, Locale locale) {
         log.info("User Search Request in: {}", idNumber);
 
         ServiceResponse<UserDto> serviceResponse = userService.findUserByIdNumber(idNumber, locale);
 
 
-        Response response = new Response();
+        UserResponse userResponse = new UserResponse();
 
-        response.setSuccess(serviceResponse.isSuccess());
-        response.setMessage(serviceResponse.getMessage());
-        response.setUserDto(serviceResponse.getResult());
+        userResponse.setSuccess(serviceResponse.isSuccess());
+        userResponse.setMessage(serviceResponse.getMessage());
+        userResponse.setUserDto(serviceResponse.getResult());
 
-        log.info("Response out: {}", response);
+        log.info("Response out: {}", userResponse);
 
-        return response;
+        return userResponse;
     }
 
     @Override
-    public Response searchUsersByCityOrGender(String city, String gender, Locale locale) {
+    public UserResponse searchUsersByCityOrGender(String city, String gender, Locale locale) {
         log.info("User Search Request by City or Gender: {}", city, gender);
 
         ServiceResponse<UserDto> serviceResponse = userService.findUsersByCityOrGender(city, gender, locale);
 
-        Response response = new Response();
+        UserResponse userResponse = new UserResponse();
 
-        response.setSuccess(serviceResponse.isSuccess());
-        response.setMessage(serviceResponse.getMessage());
-        response.setUserDtoList(serviceResponse.getList());
+        userResponse.setSuccess(serviceResponse.isSuccess());
+        userResponse.setMessage(serviceResponse.getMessage());
+        userResponse.setUserDtoList(serviceResponse.getList());
 
-        log.info("Response out: {}", response);
+        log.info("Response out: {}", userResponse);
 
-        return response;
+        return userResponse;
     }
 
     @Override
-    public Response searchUsersByUserStatus(UserStatus userStatus, Locale locale) {
+    public UserResponse searchUsersByUserStatus(UserStatus userStatus, Locale locale) {
         log.info("User Search Request by Status: {}", userStatus);
 
         ServiceResponse<UserDto> serviceResponse = userService.findUsersByStatus(userStatus, locale);
 
-        Response response = new Response();
+        UserResponse userResponse = new UserResponse();
 
-        response.setSuccess(serviceResponse.isSuccess());
-        response.setMessage(serviceResponse.getMessage());
-        response.setUserDtoList(serviceResponse.getList());
+        userResponse.setSuccess(serviceResponse.isSuccess());
+        userResponse.setMessage(serviceResponse.getMessage());
+        userResponse.setUserDtoList(serviceResponse.getList());
 
-        log.info("Response out: {}", response);
+        log.info("Response out: {}", userResponse);
 
-        return response;
+        return userResponse;
     }
 
     @Override
-    public Response updateUser(UserDto userDto, Locale locale, String username) {
+    public UserResponse updateUser(UserDto userDto, Locale locale, String username) {
         log.info("Update User Request in : {}", userDto);
 
         ServiceResponse<UserDto> serviceResponse = userService.edit(userDto, locale, username);
 
-        Response response = new Response();
+        UserResponse userResponse = new UserResponse();
 
-        response.setSuccess(serviceResponse.isSuccess());
-        response.setMessage(serviceResponse.getMessage());
-        response.setUserDto(serviceResponse.getResult());
+        userResponse.setSuccess(serviceResponse.isSuccess());
+        userResponse.setMessage(serviceResponse.getMessage());
+        userResponse.setUserDto(serviceResponse.getResult());
 
-        log.info("Response out: {}", response);
+        log.info("Response out: {}", userResponse);
 
-        return response;
+        return userResponse;
     }
 
     @Override
-    public Response createUser(UserDto userDto, Locale locale, String username) {
+    public UserResponse createUser(UserDto userDto, Locale locale, String username) {
         log.info("Create Request in : {}", userDto);
 
         ServiceResponse<UserDto> serviceResponse = userService.create(userDto, locale, username);
 
-        Response response = new Response();
+        UserResponse userResponse = new UserResponse();
 
-        response.setSuccess(serviceResponse.isSuccess());
-        response.setMessage(serviceResponse.getMessage());
-        response.setUserDto(serviceResponse.getResult());
+        userResponse.setSuccess(serviceResponse.isSuccess());
+        userResponse.setMessage(serviceResponse.getMessage());
+        userResponse.setUserDto(serviceResponse.getResult());
 
-        log.info("Response out: {}", response);
+        log.info("Response out: {}", userResponse);
 
-        return response;
+        return userResponse;
     }
 
     @Override
-    public Response deleteUser(Long id, Locale locale, String username) {
+    public UserResponse deleteUser(Long id, Locale locale, String username) {
         log.info("Delete User Request: {}", id);
 
         ServiceResponse<UserDto> serviceResponse  = userService.delete(id , locale, username);
 
-        Response response = new Response();
+        UserResponse userResponse = new UserResponse();
 
-        response.setSuccess(serviceResponse.isSuccess());
-        response.setMessage(serviceResponse.getMessage());
-        response.setUserDto(serviceResponse.getResult());
+        userResponse.setSuccess(serviceResponse.isSuccess());
+        userResponse.setMessage(serviceResponse.getMessage());
+        userResponse.setUserDto(serviceResponse.getResult());
 
-        log.info("Response out: {}", response);
+        log.info("Response out: {}", userResponse);
 
-        return response;
+        return userResponse;
     }
 }

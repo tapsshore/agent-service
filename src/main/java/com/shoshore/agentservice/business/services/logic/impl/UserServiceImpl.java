@@ -221,6 +221,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public ServiceResponse findAllUsers(Locale locale) {
+
         return (ServiceResponse) userRepository.findAll();
     }
 

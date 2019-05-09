@@ -1,6 +1,7 @@
 package com.shoshore.agentservice.business.services.logic.impl;
 
 import com.shoshore.agentservice.business.criteria.mapper.DtoMapper;
+import com.shoshore.agentservice.business.messages.PropertyResponse;
 import com.shoshore.agentservice.business.services.auditables.api.PropertyAuditableService;
 import com.shoshore.agentservice.business.services.logic.api.PropertyService;
 import com.shoshore.agentservice.domain.Property;
@@ -41,155 +42,160 @@ public class PropertyServiceImpl implements PropertyService {
     }
 
     @Override
-    public ServiceResponse findPropertyById(Long id, Locale locale) {
+    public ServiceResponse<PropertyDto> findPropertyById(Long id, Locale locale) {
+
         final ServiceResponse serviceResponse = new ServiceResponse();
 
-        final Optional<Property> propertySearched = propertyRepository.findPropertyById(id);
+        final Optional<Property> userSearched = propertyRepository.findPropertyById(id);
 
-        final boolean isAlertFound = propertySearched.isPresent();
-        if (!isAlertFound) {
-            serviceResponse.setMessage(messageService.getMessage(I18Code.MESSAGE_PROPERTY_NOT_FOUND.getCode(),
-                    new String[]{}, locale));
-
-        }
-        return serviceResponse;
-
-    }
-
-    @Override
-    public ServiceResponse findPropertiesByPropertyStatus(PropertyStatus propertyStatus, Locale locale) {
-        final ServiceResponse serviceResponse = new ServiceResponse();
-
-        final List<Property> propertyList = propertyAuditableService.findByPropertyStatus(propertyStatus, locale);
-
-        final boolean isPropertyFound = propertyList.isEmpty();
-        if (isPropertyFound) {
+        final boolean isUserFound = userSearched.isPresent();
+        if (!isUserFound) {
             serviceResponse.setMessage(messageService.getMessage(I18Code.MESSAGE_PROPERTY_NOT_FOUND.getCode(),
                     new String[]{}, locale));
 
             return serviceResponse;
 
         }
-
         serviceResponse.setSuccess(true);
 
-        serviceResponse.setResult(propertyList);
-
-        serviceResponse.setList(propertyList);
+        serviceResponse.setResult(dtoMapper.map(serviceResponse));
 
         serviceResponse.setMessage(messageService.getMessage(I18Code.MESSAGE_PROPERTY_SUCCESSFULLY_RETRIEVED.getCode(),
-                new String[]{}, locale));
+                new String [] {}, locale));
 
-        return serviceResponse;
+
+        return  serviceResponse;
+
     }
 
     @Override
-    public ServiceResponse findPropertiesByCity(String city, Locale locale) {
+    public ServiceResponse<PropertyDto> findPropertiesByPropertyStatus(PropertyStatus propertyStatus, Locale locale) {
         final ServiceResponse serviceResponse = new ServiceResponse();
 
-        final List<Property> propertyList = propertyAuditableService.findPropertiesByCity(city, locale);
+        final List<Property> propertySearched = propertyRepository.findByPropertyStatus(propertyStatus);
 
-        final boolean isPropertyFound = propertyList.isEmpty();
-        if (isPropertyFound) {
+        final boolean isPropertyFound = propertySearched.isEmpty();
+        if (!isPropertyFound) {
             serviceResponse.setMessage(messageService.getMessage(I18Code.MESSAGE_PROPERTY_NOT_FOUND.getCode(),
                     new String[]{}, locale));
 
             return serviceResponse;
 
         }
-
         serviceResponse.setSuccess(true);
 
-        serviceResponse.setResult(propertyList);
-
-        serviceResponse.setList(propertyList);
+        serviceResponse.setResult(dtoMapper.map(serviceResponse));
 
         serviceResponse.setMessage(messageService.getMessage(I18Code.MESSAGE_PROPERTY_SUCCESSFULLY_RETRIEVED.getCode(),
-                new String[]{}, locale));
+                new String [] {}, locale));
 
-        return serviceResponse;
+
+        return  serviceResponse;
     }
 
     @Override
-    public ServiceResponse findPropertiesBySuburb(String suburb, Locale locale) {
+    public ServiceResponse<PropertyDto> findPropertiesByCity(String city, Locale locale) {
         final ServiceResponse serviceResponse = new ServiceResponse();
 
-        final List<Property> propertyList = propertyAuditableService.findPropertiesBySuburb(suburb, locale);
+        final List<Property> propertySearched = propertyRepository.findPropertiesByCity(city);
 
-        final boolean isPropertyFound = propertyList.isEmpty();
-        if (isPropertyFound) {
+        final boolean isPropertyFound = propertySearched.isEmpty();
+        if (!isPropertyFound) {
             serviceResponse.setMessage(messageService.getMessage(I18Code.MESSAGE_PROPERTY_NOT_FOUND.getCode(),
                     new String[]{}, locale));
 
             return serviceResponse;
 
         }
-
         serviceResponse.setSuccess(true);
 
-        serviceResponse.setResult(propertyList);
-
-        serviceResponse.setList(propertyList);
+        serviceResponse.setResult(dtoMapper.map(serviceResponse));
 
         serviceResponse.setMessage(messageService.getMessage(I18Code.MESSAGE_PROPERTY_SUCCESSFULLY_RETRIEVED.getCode(),
-                new String[]{}, locale));
+                new String [] {}, locale));
 
-        return serviceResponse;
+
+        return  serviceResponse;
     }
 
     @Override
-    public ServiceResponse create(PropertyDto propertyDto, Locale locale, String username) {
-        final ServiceResponse response = save(propertyDto, locale, username);
-        final boolean hasSavedProperty = response != null;
+    public ServiceResponse<PropertyDto> findPropertiesBySuburb(String suburb, Locale locale) {
+        final ServiceResponse serviceResponse = new ServiceResponse();
+
+        final List<Property> propertySearched = propertyRepository.findPropertiesBySuburb(suburb);
+
+        final boolean isPropertyFound = propertySearched.isEmpty();
+        if (!isPropertyFound) {
+            serviceResponse.setMessage(messageService.getMessage(I18Code.MESSAGE_PROPERTY_NOT_FOUND.getCode(),
+                    new String[]{}, locale));
+
+            return serviceResponse;
+
+        }
+        serviceResponse.setSuccess(true);
+
+        serviceResponse.setResult(dtoMapper.map(serviceResponse));
+
+        serviceResponse.setMessage(messageService.getMessage(I18Code.MESSAGE_PROPERTY_SUCCESSFULLY_RETRIEVED.getCode(),
+                new String [] {}, locale));
+
+
+        return  serviceResponse;
+    }
+
+    @Override
+    public ServiceResponse<PropertyDto> create(PropertyDto propertyDto, Locale locale, String username) {
+        final ServiceResponse serviceResponse = save(propertyDto, locale, username);
+        final boolean hasSavedProperty = serviceResponse != null;
         if (hasSavedProperty) {
-            return populatePropertyResponse(true, response.getProperty(), messageService.getMessage(I18Code.MESSAGE_PROPERTY_CREATED_SUCCESSFULLY.getCode(),
+            return populatePropertyResponse(true, serviceResponse.getProperty(), messageService.getMessage(I18Code.MESSAGE_PROPERTY_CREATED_SUCCESSFULLY.getCode(),
                     new String[]{String.valueOf(propertyDto.getId())}, locale));
         }
-        return populatePropertyResponse(false, response.getProperty(), messageService.getMessage(I18Code.MESSAGE_PROPERTY_NOT_CREATED.getCode(),
+        return populatePropertyResponse(false, serviceResponse.getProperty(), messageService.getMessage(I18Code.MESSAGE_PROPERTY_NOT_CREATED.getCode(),
                 new String[]{String.valueOf(propertyDto.getId())}, locale));
 
     }
 
     @Override
-    public ServiceResponse edit(PropertyDto propertyDto, Locale locale, String username) {
+    public ServiceResponse<PropertyDto> edit(PropertyDto propertyDto, Locale locale, String username) {
         final ServiceResponse savedProperty = save(propertyDto, locale, username);
         final boolean hasSavedProperty = savedProperty != null;
         if (hasSavedProperty) {
-            return populatePropertyResponse(true, savedProperty.getProperty(), messageService.getMessage(I18Code.MESSAGE_PROPERTY_EDITED_SUCCESSFULLY.getCode(),
+            return populatePropertyResponse(true, savedProperty.getProperty(), messageService.getMessage(I18Code.MESSAGE_USER_EDITED_SUCCESSFULLY.getCode(),
                     new String[]{String.valueOf(propertyDto.getId())}, locale));
         }
-        return populatePropertyResponse(false, savedProperty.getProperty(), messageService.getMessage(I18Code.MESSAGE_PROPERTY_NOT_EDITED.getCode(),
+        return populatePropertyResponse(false, savedProperty.getProperty(), messageService.getMessage(I18Code.MESSAGE_USER_NOT_EDITED.getCode(),
                 new String[]{String.valueOf(propertyDto.getId())}, locale));
     }
 
     @Override
-    public ServiceResponse search(PropertyWrapper propertyWrapper, Locale locale, String username) {
-        final ServiceResponse serviceResponse = new ServiceResponse();
+    public PropertyResponse search(PropertyWrapper propertyWrapper, Locale locale, String username) {
+        final PropertyResponse propertyResponse = new PropertyResponse();
 
         Stream streams = (Stream) propertyAuditableService.search(propertyWrapper, locale, username);
 
         Page pageStream = propertyRepository.findAll((Pageable) streams);
 
-        serviceResponse.setSuccess(true);
+        propertyResponse.setSuccess(true);
 
-        serviceResponse.setResult(pageStream);
+        propertyResponse.setResult(pageStream);
 
-        serviceResponse.setMessage(messageService.getMessage(I18Code.MESSAGE_PROPERTY_SUCCESSFULLY_RETRIEVED.getCode(),
+        propertyResponse.setMessage(messageService.getMessage(I18Code.MESSAGE_PROPERTY_SUCCESSFULLY_RETRIEVED.getCode(),
                 new String[]{}, locale));
 
-        return serviceResponse;
+        return propertyResponse;
     }
 
     @Override
-    public ServiceResponse delete(Long id, Locale locale, String username) {
+    public ServiceResponse<PropertyDto> delete(Long id, Locale locale, String username) {
         final ServiceResponse serviceResponse = new ServiceResponse();
 
-        final Optional<Property> propertySearched;
+        final Optional<Property> usersSearched;
 
-        propertySearched = propertyRepository.findPropertyById(id);
+        usersSearched = propertyRepository.findPropertyById(id);
 
-        final boolean isPropertyFound = propertySearched.isPresent();
-        if (!isPropertyFound) {
+        final boolean isUserFound = usersSearched.isPresent();
+        if (!isUserFound) {
             serviceResponse.setMessage(messageService.getMessage(I18Code.MESSAGE_PROPERTY_NOT_FOUND.getCode(),
                     new String[]{}, locale));
 
@@ -202,29 +208,29 @@ public class PropertyServiceImpl implements PropertyService {
         PropertyDto propertyDto = dtoMapper.map(property);
 
         property.setId(propertyDto.getId());
-        property.setDescription(propertyDto.getDescription());
+        property.setCity(propertyDto.getCity());
         property.setDateCreated(propertyDto.getDateCreated());
-        property.setPropertyStatus(PropertyStatus.VACANT);
+        property.setPropertyStatus(PropertyStatus.TAKEN);
         property.setId(propertyDto.getId());
         propertyAuditableService.save(property, locale, username);
 
         serviceResponse.setSuccess(true);
-        serviceResponse.setResult(dtoMapper.map(propertyDto));
+        serviceResponse.setResult(dtoMapper.map(serviceResponse));
 
         serviceResponse.setMessage(messageService.getMessage(I18Code.MESSAGE_PROPERTY_DELETE_SUCCESS.getCode(),
-                new String[]{property.getId().toString()}, locale));
+                new String[]{propertyDto.getId().toString()}, locale));
 
         return serviceResponse;
     }
 
     @Override
-    public ServiceResponse findAllProperties(Locale locale) {
+    public ServiceResponse<PropertyDto> findAllProperties(Locale locale) {
         return (ServiceResponse) propertyRepository.findAll();
     }
 
     private ServiceResponse populatePropertyResponse(boolean success,
-                                                     Property property,
-                                                     String narrative) {
+                                                                  Property property,
+                                                                  String narrative) {
         ServiceResponse response = new ServiceResponse();
         response.setSuccess(success);
         response.setMessage(narrative);

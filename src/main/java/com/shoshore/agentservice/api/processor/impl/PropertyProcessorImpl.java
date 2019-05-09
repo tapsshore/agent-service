@@ -1,8 +1,8 @@
 package com.shoshore.agentservice.api.processor.impl;
 
-import com.shoshore.agentservice.api.messages.Response;
 import com.shoshore.agentservice.api.processor.api.PropertyProcessor;
 import com.shoshore.agentservice.business.criteria.mapper.DtoMapper;
+import com.shoshore.agentservice.business.messages.PropertyResponse;
 import com.shoshore.agentservice.business.services.logic.api.PropertyService;
 import com.shoshore.agentservice.utils.common.i18.api.MessageService;
 import com.shoshore.agentservice.utils.enums.PropertyStatus;
@@ -11,14 +11,16 @@ import com.shoshore.agentservice.utils.messages.internal.ServiceResponse;
 import com.shoshore.agentservice.utils.wrapper.PropertyWrapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Locale;
 
 @SuppressWarnings("Duplicates")
 public class PropertyProcessorImpl implements PropertyProcessor {
-
+    @Autowired
     private final PropertyService propertyService;
     private final DtoMapper dtoMapper;
+    @Autowired
     private final MessageService messageService;
 
     public PropertyProcessorImpl(PropertyService propertyService, DtoMapper dtoMapper, MessageService messageService) {
@@ -30,142 +32,141 @@ public class PropertyProcessorImpl implements PropertyProcessor {
     Logger log = LoggerFactory.getLogger(PropertyProcessorImpl.class.getName());
 
     @Override
-    public Response searchPropertyById(Long id, Locale locale) {
+    public PropertyResponse searchPropertyById(Long id, Locale locale) {
 
         log.info("Property Search Request in: {}", id);
 
         ServiceResponse<PropertyDto> serviceResponse = propertyService.findPropertyById(id, locale);
 
 
-        Response response = new Response();
+        PropertyResponse propertyResponse = new PropertyResponse();
 
-        response.setSuccess(serviceResponse.isSuccess());
-        response.setMessage(serviceResponse.getMessage());
-        response.setPropertyDto(serviceResponse.getResult());
+        propertyResponse.setSuccess(serviceResponse.isSuccess());
+        propertyResponse.setMessage(serviceResponse.getMessage());
+        propertyResponse.setPropertyDto(serviceResponse.getResult());
 
-        log.info("Response out: {}", response);
+        log.info("Response out: {}", propertyResponse);
 
-        return response;
+        return propertyResponse;
     }
 
     @Override
-    public Response search(PropertyWrapper propertyWrapper, Locale locale, String username) {
+    public PropertyResponse search(PropertyWrapper propertyWrapper, Locale locale, String username) {
 
         log.info("Search Request: {}", propertyWrapper);
 
-        ServiceResponse serviceResponse = propertyService.search(propertyWrapper, locale, username);
+        PropertyResponse serviceResponse = propertyService.search(propertyWrapper, locale, username);
+        PropertyResponse propertyResponse = new PropertyResponse();
 
-        Response response = new Response();
-
-        response.setSuccess(serviceResponse.isSuccess());
-        response.setMessage(serviceResponse.getMessage());
-        return response;
+        propertyResponse.setSuccess(serviceResponse.isSuccess());
+        propertyResponse.setMessage(serviceResponse.getMessage());
+        return propertyResponse;
     }
 
     @Override
-    public Response retrieveAllProperties(Locale locale) {
+    public PropertyResponse retrieveAllProperties(Locale locale) {
 
         log.info("Property Search Request to Find All Properties");
         ServiceResponse<PropertyDto> serviceResponse = propertyService.findAllProperties(locale);
 
-        Response response = new Response();
+        PropertyResponse propertyResponse = new PropertyResponse();
 
-        response.setSuccess(true);
-        response.setMessage(serviceResponse.getMessage());
-        response.setPropertyDtoList(serviceResponse.getList());
-        log.info("Response out: {}", response);
-        return response;
+        propertyResponse.setSuccess(true);
+        propertyResponse.setMessage(serviceResponse.getMessage());
+        propertyResponse.setPropertyDtoList(serviceResponse.getList());
+        log.info("Response out: {}", propertyResponse);
+        return propertyResponse;
     }
 
     @Override
-    public Response searchPropertysByCity(String city, Locale locale) {
+    public PropertyResponse searchPropertysByCity(String city, Locale locale) {
 
         log.info("Property Search Request by City: {}", city);
 
         ServiceResponse<PropertyDto> serviceResponse = propertyService.findPropertiesByCity(city, locale);
 
-        Response response = new Response();
+        PropertyResponse propertyResponse = new PropertyResponse();
 
-        response.setSuccess(serviceResponse.isSuccess());
-        response.setMessage(serviceResponse.getMessage());
-        response.setPropertyDtoList(serviceResponse.getList());
+        propertyResponse.setSuccess(serviceResponse.isSuccess());
+        propertyResponse.setMessage(serviceResponse.getMessage());
+        propertyResponse.setPropertyDtoList(serviceResponse.getList());
 
-        log.info("Response out: {}", response);
+        log.info("Response out: {}", propertyResponse);
 
-        return response;
+        return propertyResponse;
     }
 
     @Override
-    public Response searchPropertysBySuburb(String suburb, Locale locale) {
+    public PropertyResponse searchPropertysBySuburb(String suburb, Locale locale) {
 
 
         log.info("Property Search Request by Suburb: {}", suburb);
 
         ServiceResponse<PropertyDto> serviceResponse = propertyService.findPropertiesBySuburb(suburb, locale);
 
-        Response response = new Response();
+        PropertyResponse propertyResponse = new PropertyResponse();
 
-        response.setSuccess(serviceResponse.isSuccess());
-        response.setMessage(serviceResponse.getMessage());
-        response.setPropertyDtoList(serviceResponse.getList());
+        propertyResponse.setSuccess(serviceResponse.isSuccess());
+        propertyResponse.setMessage(serviceResponse.getMessage());
+        propertyResponse.setPropertyDtoList(serviceResponse.getList());
 
-        log.info("Response out: {}", response);
+        log.info("Response out: {}", propertyResponse);
 
-        return response;
+        return propertyResponse;
     }
 
     @Override
-    public Response searchPropertysByPropertyStatus(PropertyStatus propertyStatus, Locale locale) {
+    public PropertyResponse searchPropertysByPropertyStatus(PropertyStatus propertyStatus, Locale locale) {
 
         log.info("Property Search Request by Property Status: {}", propertyStatus);
 
         ServiceResponse<PropertyDto> serviceResponse = propertyService.findPropertiesByPropertyStatus(propertyStatus, locale);
 
-        Response response = new Response();
+        PropertyResponse propertyResponse = new PropertyResponse();
 
-        response.setSuccess(serviceResponse.isSuccess());
-        response.setMessage(serviceResponse.getMessage());
-        response.setPropertyDtoList(serviceResponse.getList());
+        propertyResponse.setSuccess(serviceResponse.isSuccess());
+        propertyResponse.setMessage(serviceResponse.getMessage());
+        propertyResponse.setPropertyDtoList(serviceResponse.getList());
 
-        log.info("Response out: {}", response);
+        log.info("Response out: {}", propertyResponse);
 
-        return response;
+        return propertyResponse;
     }
 
     @Override
-    public Response updateProperty(PropertyDto propertyDto, Locale locale, String username) {
+    public PropertyResponse updateProperty(PropertyDto propertyDto, Locale locale, String username) {
 
         log.info("Update Property Request in : {}", propertyDto);
 
         ServiceResponse<PropertyDto> serviceResponse = propertyService.edit(propertyDto, locale, username);
 
-        Response response = new Response();
+        PropertyResponse propertyResponse = new PropertyResponse();
 
-        response.setSuccess(serviceResponse.isSuccess());
-        response.setMessage(serviceResponse.getMessage());
-        response.setPropertyDto(serviceResponse.getResult());
+        propertyResponse.setSuccess(serviceResponse.isSuccess());
+        propertyResponse.setMessage(serviceResponse.getMessage());
+        propertyResponse.setPropertyDto(serviceResponse.getResult());
 
-        log.info("Response out: {}", response);
+        log.info("Response out: {}", propertyResponse);
 
-        return response;
+        return propertyResponse;
     }
 
     @Override
-    public Response deleteProperty(Long id, Locale locale, String username) {
+    public PropertyResponse deleteProperty(Long id, Locale locale, String username) {
 
         log.info("Delete Property Request: {}", id);
 
-        ServiceResponse<PropertyDto> serviceResponse  = propertyService.delete(id , locale,username);
+        ServiceResponse<PropertyDto> serviceResponse = propertyService.delete(id, locale, username);
 
-        Response response = new Response();
+        PropertyResponse propertyResponse = new PropertyResponse();
 
-        response.setSuccess(serviceResponse.isSuccess());
-        response.setMessage(serviceResponse.getMessage());
-        response.setPropertyDto(serviceResponse.getResult());
+        propertyResponse.setSuccess(serviceResponse.isSuccess());
+        propertyResponse.setMessage(serviceResponse.getMessage());
+        propertyResponse.setPropertyDto(serviceResponse.getResult());
 
-        log.info("Response out: {}", response);
+        log.info("Response out: {}", propertyResponse);
 
-        return response;
+        return propertyResponse;
     }
     }
 
