@@ -16,6 +16,8 @@ public abstract class DtoMapper {
 
     public abstract User map(UserDto userDto);
 
+    public abstract UserDto map(User user);
+
     public abstract List<User> mapUser(List<User> users);
 
 

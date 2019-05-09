@@ -15,6 +15,7 @@
 /home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/utils/enums/UserStatus.java
 /home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/business/services/auditables/api/UserAuditableService.java
 /home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/utils/common/i18/impl/MessageServiceImpl.java
+/home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/business/messages/UserResponse.java
 /home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/business/services/validations/api/UserValidation.java
 /home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/business/config/BusinessAspectConfig.java
 /home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/utils/criteria/CriteriaUtils.java
@@ -44,6 +45,7 @@
 /home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/utils/enums/PropertyType.java
 /home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/business/criteria/builder/PropertyCriteriaBuilder.java
 /home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/utils/wrapper/UserWrapper.java
+/home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/business/messages/PropertyResponse.java
 /home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/business/services/validations/impl/PropertyValidationImpl.java
 /home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/domain/DomainMarkerInterface.java
 /home/shoshore/Documents/projects/personal/agent-service/src/main/java/com/shoshore/agentservice/business/services/logic/impl/UserServiceImpl.java

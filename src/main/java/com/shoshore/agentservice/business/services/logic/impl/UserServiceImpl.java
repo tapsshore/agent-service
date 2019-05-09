@@ -81,19 +81,18 @@ public class UserServiceImpl implements UserService {
     public ServiceResponse findUserById(Long id, Locale locale) {
         final ServiceResponse serviceResponse = new ServiceResponse();
 
-        final Optional<User> userSearched = userRepository.findUserById(id);
+        final Optional<User> userSearched = userAuditableService.findUserById(id,locale);
 
         final boolean isUserFound = userSearched.isPresent();
         if (!isUserFound) {
             serviceResponse.setMessage(messageService.getMessage(I18Code.MESSAGE_USER_NOT_FOUND.getCode(),
                     new String[]{}, locale));
-
             return serviceResponse;
-
         }
+
         serviceResponse.setSuccess(true);
 
-        serviceResponse.setResult(dtoMapper.map(serviceResponse));
+        serviceResponse.setUser(userSearched.get());
 
         serviceResponse.setMessage(messageService.getMessage(I18Code.MESSAGE_USER_SUCCESSFULLY_RETRIEVED.getCode(),
                 new String [] {}, locale));

@@ -19,14 +19,21 @@ import com.shoshore.agentservice.repository.config.DataConfig;
 import com.shoshore.agentservice.utils.common.i18.api.MessageService;
 import com.shoshore.agentservice.utils.common.i18.impl.MessageServiceImpl;
 import org.mapstruct.factory.Mappers;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.DependsOn;
 import org.springframework.context.annotation.Import;
+import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 
 @Configuration
 @Import({DataConfig.class})
 public class BusinessConfig {
+
+    private static Logger LOGGER = LoggerFactory.getLogger(BusinessConfig.class);
+
 
     @Bean
     UserAuditableService userAuditableService(UserRepository userRepository) {
@@ -58,11 +65,21 @@ public class BusinessConfig {
                                     DtoMapper dtoMapper, HomePropertyRepository propertyRepository) {
         return new PropertyServiceImpl(messageService, propertyAuditableService, dtoMapper, propertyRepository);
     }
+    @Bean(name = "customMessageSource")
+    public MessageSource customMessageSource(){
+        final ReloadableResourceBundleMessageSource messageSource=new ReloadableResourceBundleMessageSource();
+        messageSource.setBasename("classpath:i18n/messages");
+        messageSource.setDefaultEncoding("UTF-8");
+        return messageSource;
+    }
+
 
 
     @Bean
-    MessageService messageService(MessageSource messageSource) {
-        return new MessageServiceImpl(messageSource);
+    @DependsOn("customMessageSource")
+    MessageService messageService(MessageSource customMessageSource) {
+            LOGGER.info("Setting up Message service, message-source:: {}", customMessageSource);
+        return new MessageServiceImpl(customMessageSource);
     }
 
 

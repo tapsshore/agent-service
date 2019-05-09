@@ -43,7 +43,7 @@ public class UserProcessorImpl implements UserProcessor {
 
         userResponse.setSuccess(serviceResponse.isSuccess());
         userResponse.setMessage(serviceResponse.getMessage());
-        userResponse.setUserDto(serviceResponse.getResult());
+        userResponse.setUserDto(dtoMapper.map(serviceResponse.getUser()));
 
         log.info("Response out: {}", userResponse);
 
@@ -88,7 +88,7 @@ public class UserProcessorImpl implements UserProcessor {
 
         userResponse.setSuccess(serviceResponse.isSuccess());
         userResponse.setMessage(serviceResponse.getMessage());
-        userResponse.setUserDto(serviceResponse.getResult());
+        userResponse.setUserDto(dtoMapper.map(serviceResponse.getUser()));
 
         log.info("Response out: {}", userResponse);
 
@@ -106,7 +106,7 @@ public class UserProcessorImpl implements UserProcessor {
 
         userResponse.setSuccess(serviceResponse.isSuccess());
         userResponse.setMessage(serviceResponse.getMessage());
-        userResponse.setUserDto(serviceResponse.getResult());
+        userResponse.setUserDto(dtoMapper.map(serviceResponse.getUser()));
 
         log.info("Response out: {}", userResponse);
 
@@ -157,7 +157,7 @@ public class UserProcessorImpl implements UserProcessor {
 
         userResponse.setSuccess(serviceResponse.isSuccess());
         userResponse.setMessage(serviceResponse.getMessage());
-        userResponse.setUserDto(serviceResponse.getResult());
+        userResponse.setUserDto(dtoMapper.map(serviceResponse.getUser()));
 
         log.info("Response out: {}", userResponse);
 
@@ -174,7 +174,7 @@ public class UserProcessorImpl implements UserProcessor {
 
         userResponse.setSuccess(serviceResponse.isSuccess());
         userResponse.setMessage(serviceResponse.getMessage());
-        userResponse.setUserDto(serviceResponse.getResult());
+        userResponse.setUserDto(dtoMapper.map(serviceResponse.getUser()));
 
         log.info("Response out: {}", userResponse);
 
@@ -191,7 +191,7 @@ public class UserProcessorImpl implements UserProcessor {
 
         userResponse.setSuccess(serviceResponse.isSuccess());
         userResponse.setMessage(serviceResponse.getMessage());
-        userResponse.setUserDto(serviceResponse.getResult());
+        userResponse.setUserDto(dtoMapper.map(serviceResponse.getUser()));
 
         log.info("Response out: {}", userResponse);
 

@@ -1,7 +1,6 @@
 package com.shoshore.agentservice.api.resource;
 
 
-import com.shoshore.agentservice.api.messages.Response;
 import com.shoshore.agentservice.api.processor.api.UserProcessor;
 import com.shoshore.agentservice.business.messages.UserResponse;
 import com.shoshore.agentservice.utils.constants.Constants;
@@ -12,7 +11,6 @@ import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -60,7 +58,7 @@ public class UserResource {
     public  UserResponse findUserRecordById(@PathVariable("id") final Long id,
                                                  @ApiParam(value = Constants.SOURCE_TYPE_NARRATIVE) @RequestHeader(value =  Constants.SOURCE_TYPE, required = false) final String username,
                                                  @ApiParam(value = Constants.LOCALE_LANGUAGE_NARRATIVE) @RequestHeader(value = Constants.LOCALE_LANGUAGE,
-                                                         defaultValue = Constants.DEFAULT_LOCALE, required = false) final Locale locale){
+                                                         defaultValue = Constants.DEFAULT_LOCALE) final Locale locale){
 
         return userProcessor.searchUserById(id, locale);
 

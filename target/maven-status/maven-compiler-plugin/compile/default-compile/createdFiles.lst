@@ -11,10 +11,12 @@ com/shoshore/agentservice/api/processor/api/PropertyProcessor.class
 com/shoshore/agentservice/business/criteria/mapper/DtoMapperImpl.class
 com/shoshore/agentservice/business/services/validations/api/PropertyValidation.class
 com/shoshore/agentservice/business/aspects/pointcuts/BusinessPointCuts.class
+com/shoshore/agentservice/business/messages/PropertyResponse.class
 com/shoshore/agentservice/business/services/logic/api/PropertyService.class
 com/shoshore/agentservice/business/aspects/advice/PropertyServiceAspects.class
 com/shoshore/agentservice/utils/audit/trail/utils/Auditable.class
 com/shoshore/agentservice/business/services/auditables/api/PropertyAuditableService.class
+com/shoshore/agentservice/business/messages/UserResponse.class
 com/shoshore/agentservice/utils/enums/PropertyType.class
 com/shoshore/agentservice/repository/api/HomePropertyRepository.class
 com/shoshore/agentservice/repository/api/UserRepository.class
