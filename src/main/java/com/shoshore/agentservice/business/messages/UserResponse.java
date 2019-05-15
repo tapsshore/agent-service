@@ -7,7 +7,6 @@ import java.util.List;
 public class UserResponse {
 
     private boolean success;
-    private String narrative;
     private String message;
     private UserDto userDto;
     private List<UserDto> userDtoList;
@@ -26,14 +25,6 @@ public class UserResponse {
 
     public void setSuccess(boolean success) {
         this.success = success;
-    }
-
-    public String getNarrative() {
-        return narrative;
-    }
-
-    public void setNarrative(String narrative) {
-        this.narrative = narrative;
     }
 
     public String getMessage() {
@@ -56,7 +47,6 @@ public class UserResponse {
     public String toString() {
         return "UserResponse{" +
                 "success=" + success +
-                ", narrative='" + narrative + '\'' +
                 ", message='" + message + '\'' +
                 ", userDto=" + userDto +
                 ", userDtoList=" + userDtoList +

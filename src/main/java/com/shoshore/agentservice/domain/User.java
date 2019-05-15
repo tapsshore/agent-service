@@ -166,6 +166,9 @@ public class User {
         if (dateLastUpdated == null){
             setDateLastUpdated(new Date());
         }
+        if (userStatus==null){
+            setUserStatus(UserStatus.ACTIVE);
+        }
     }
     @PreUpdate
     private void reload(){

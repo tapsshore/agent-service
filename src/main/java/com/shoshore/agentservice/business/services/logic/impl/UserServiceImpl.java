@@ -188,9 +188,14 @@ public class UserServiceImpl implements UserService {
         user.setDateCreated(userDto.getDateCreated());
         user.setDateLastUpdated(userDto.getDateLastUpdated());
         user.setGender(userDto.getGender());
-        user.setDateCreated(userDto.getDateCreated());
+        user.setCity(userDto.getCity());
+        user.setHomeAddress(userDto.getHomeAddress());
+        user.setEmailAddress(userDto.getEmailAddress());
+        user.setFirstName(userDto.getFirstName());
+        user.setLastName(userDto.getLastName());
+        user.setIdNumber(userDto.getIdNumber());
+        user.setMobileNumber(userDto.getMobileNumber());
         user.setUserStatus(UserStatus.DELETED);
-        user.setId(userDto.getId());
         userAuditableService.save(user, locale, username);
 
         serviceResponse.setSuccess(true);
@@ -223,7 +228,12 @@ public class UserServiceImpl implements UserService {
     @Override
     public ServiceResponse findAllUsers(Locale locale) {
 
-        return (ServiceResponse) userRepository.findAll();
+         List<User> userList = userRepository.findAll();
+         ServiceResponse response = new ServiceResponse<>();
+         response.setList(userList);
+         response.setSuccess(true);
+         response.setMessage(messageService.getMessage(I18Code.MESSAGE_USER_SUCCESSFULLY_RETRIEVED.getCode(),new String[]{},locale));
+        return response;
     }
 
     @Override
