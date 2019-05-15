@@ -64,6 +64,19 @@ public class UserResource {
 
     }
 
+    @ApiOperation(value = "Delete User", response = UserResponse.class)
+    @DeleteMapping(value = "/{userId}", produces = {MediaType.APPLICATION_JSON_VALUE},
+            consumes = {MediaType.APPLICATION_JSON_VALUE})
+    public UserResponse deleteUser(@PathVariable("userId") final Long id,
+                                                   @ApiParam(value = Constants.SOURCE_TYPE_NARRATIVE) @RequestHeader(value = Constants.SOURCE_TYPE, required = false) final String sourceType,
+                                                   @ApiParam(value = Constants.SOURCE_NAME_NARRATIVE) @RequestHeader(value = Constants.SOURCE_NAME, required = false) final String sourceName,
+                                                   @RequestHeader(value = Constants.SOURCE_NAME_NARRATIVE, required = false) final String username,
+                                                   @ApiParam(value = Constants.LOCALE_LANGUAGE_NARRATIVE) @RequestHeader(value = Constants.LOCALE_LANGUAGE,
+                                                           defaultValue = Constants.DEFAULT_LOCALE, required = false) final Locale locale) {
+
+        return userProcessor.deleteUser(id, locale, username);
+    }
+
 
 
 }

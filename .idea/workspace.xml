@@ -2,32 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3161cfc6-c832-4b69-9b17-22c551e3ff6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/agent-service.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/i18n/messages_en.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/messages/PropertyResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/messages/UserResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agent-service.log.2019-05-08.0.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agent-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/agent-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent-service.log" beforeDir="false" afterPath="$PROJECT_DIR$/agent-service.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/AgentSystemApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/AgentSystemApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/api/PropertyProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/api/PropertyProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/api/UserProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/api/UserProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/impl/PropertyProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/impl/PropertyProcessorImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/impl/UserProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/impl/UserProcessorImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/resource/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/resource/UserResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/config/BusinessConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/config/BusinessConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/mapper/DtoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/mapper/DtoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/messages/PropertyResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/messages/PropertyResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/messages/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/messages/UserResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/api/PropertyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/api/PropertyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/PropertyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/PropertyServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/common/i18/api/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/common/i18/api/MessageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/common/i18/impl/MessageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/common/i18/impl/MessageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/enums/I18Code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/enums/I18Code.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/i18/messages_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/enums/UserStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/enums/UserStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/agent-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/agent-service-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/agent-service-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/agent-service-1.0-SNAPSHOT.jar.original" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
@@ -39,8 +25,6 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/api/processor/impl/PropertyProcessorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/api/processor/impl/PropertyProcessorImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/api/processor/impl/UserProcessorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/api/processor/impl/UserProcessorImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/api/resource/UserResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/api/resource/UserResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/aspects/advice/PropertyServiceAspects.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/aspects/advice/PropertyServiceAspects.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/aspects/advice/UserServiceAspects.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/aspects/advice/UserServiceAspects.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/config/BusinessConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/config/BusinessConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/criteria/builder/PropertyCriteriaBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/criteria/builder/PropertyCriteriaBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/criteria/builder/UserCriteriaBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/criteria/builder/UserCriteriaBuilder.class" afterDir="false" />
@@ -48,13 +32,14 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/criteria/mapper/DtoMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/criteria/mapper/DtoMapperImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/criteria/specs/PropertySpecification.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/criteria/specs/PropertySpecification.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/criteria/specs/UserSpecification.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/criteria/specs/UserSpecification.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/messages/PropertyResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/messages/PropertyResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/messages/UserResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/messages/UserResponse.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/services/auditables/api/PropertyAuditableService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/services/auditables/api/PropertyAuditableService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/services/auditables/api/UserAuditableService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/services/auditables/api/UserAuditableService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/services/auditables/impl/PropertyAuditableServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/services/auditables/impl/PropertyAuditableServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/services/auditables/impl/UserAuditableServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/services/auditables/impl/UserAuditableServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/services/logic/api/PropertyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/services/logic/api/PropertyService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/services/logic/api/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/services/logic/api/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/services/logic/impl/PropertyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/services/logic/impl/PropertyServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/services/logic/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/services/logic/impl/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/services/validations/api/PropertyValidation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/services/validations/api/PropertyValidation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/services/validations/api/UserValidation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/business/services/validations/api/UserValidation.class" afterDir="false" />
@@ -66,7 +51,6 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/domain/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/repository/api/HomePropertyRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/repository/api/HomePropertyRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/repository/api/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/repository/api/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/common/i18/api/MessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/common/i18/api/MessageService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/common/i18/impl/MessageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/common/i18/impl/MessageServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/commonResponse/CommonResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/commonResponse/CommonResponse.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/criteria/CriteriaUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/criteria/CriteriaUtils.class" afterDir="false" />
@@ -81,10 +65,9 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/keygen/KeyGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/keygen/KeyGen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/messages/external/PropertyDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/messages/external/PropertyDto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/messages/external/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/messages/external/UserDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/messages/internal/ServiceResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/messages/internal/ServiceResponse.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/wrapper/PropertyWrapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/wrapper/PropertyWrapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/wrapper/UserWrapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shoshore/agentservice/utils/wrapper/UserWrapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/i18/messages_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/i18/messages_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/i18n/messages_en.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/shoshore/agentservice/business/criteria/mapper/DtoMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/shoshore/agentservice/business/criteria/mapper/DtoMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
@@ -103,11 +86,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/impl/UserProcessorImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="176" column="72" selection-start-line="176" selection-start-column="72" selection-end-line="176" selection-end-column="72" />
+            <state relative-caret-position="104">
+              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,20 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="270" column="20" lean-forward="true" selection-start-line="270" selection-start-column="20" selection-end-line="270" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/repository/api/UserRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            <state relative-caret-position="260">
+              <caret line="189" column="44" lean-forward="true" selection-start-line="189" selection-start-column="44" selection-end-line="189" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -138,6 +112,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
               <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/resource/UserResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="73" column="103" selection-start-line="73" selection-start-column="103" selection-end-line="73" selection-end-column="103" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -253,12 +239,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/messages/external/PropertyDto.java" />
         <option value="$PROJECT_DIR$/src/main/resources/i18/messages_en.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/common/i18/api/MessageService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/resource/UserResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/config/BusinessConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/criteria/mapper/DtoMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/messages/internal/ServiceResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/impl/UserProcessorImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/resource/UserResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/enums/UserStatus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/UserServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -360,6 +347,16 @@
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="processor" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agent-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="agentservice" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="agent-service" type="b2602c69:ProjectViewProjectNode" />
@@ -473,16 +470,15 @@
       <workItem from="1557327328019" duration="46000" />
       <workItem from="1557327408387" duration="7015000" />
       <workItem from="1557391044860" duration="10000" />
-      <workItem from="1557411498899" duration="2337000" />
+      <workItem from="1557411498899" duration="4848000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28404000" />
+    <option name="totallyTimeSpent" value="30915000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1016" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20117396" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -495,16 +491,16 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32946634" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4994664" visible="true" weight="0.35266823" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4994664" visible="true" weight="0.5011601" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.28825623" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.035587188" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.28422275" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010672" side_tool="true" weight="0.35266823" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4994664" weight="0.1718377" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4994664" weight="0.17169374" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
@@ -586,13 +582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/enums/UserStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -907,6 +896,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/impl/UserProcessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/repository/api/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -916,28 +915,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/resource/UserResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="30" column="22" selection-start-line="30" selection-end-line="31" />
+        <state relative-caret-position="266">
+          <caret line="73" column="103" selection-start-line="73" selection-start-column="103" selection-end-line="73" selection-end-column="103" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/utils/enums/UserStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="60" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/business/services/logic/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="270" column="20" lean-forward="true" selection-start-line="270" selection-start-column="20" selection-end-line="270" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/shoshore/agentservice/api/processor/impl/UserProcessorImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="176" column="72" selection-start-line="176" selection-start-column="72" selection-end-line="176" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="260">
+          <caret line="189" column="44" lean-forward="true" selection-start-line="189" selection-start-column="44" selection-end-line="189" selection-end-column="44" />
         </state>
       </provider>
     </entry>

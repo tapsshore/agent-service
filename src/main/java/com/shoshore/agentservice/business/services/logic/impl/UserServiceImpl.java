@@ -182,17 +182,19 @@ public class UserServiceImpl implements UserService {
 
         User user = new User();
 
-        UserDto userDto = dtoMapper.map(serviceResponse);
+        UserDto userDto = dtoMapper.map(usersSearched.get());
 
         user.setId(userDto.getId());
+        user.setDateCreated(userDto.getDateCreated());
+        user.setDateLastUpdated(userDto.getDateLastUpdated());
         user.setGender(userDto.getGender());
         user.setDateCreated(userDto.getDateCreated());
-        user.setUserStatus(UserStatus.ACTIVE);
+        user.setUserStatus(UserStatus.DELETED);
         user.setId(userDto.getId());
         userAuditableService.save(user, locale, username);
 
         serviceResponse.setSuccess(true);
-        serviceResponse.setResult(dtoMapper.map(serviceResponse));
+        serviceResponse.setUser(user);
 
         serviceResponse.setMessage(messageService.getMessage(I18Code.MESSAGE_USER_DELETE_SUCCESS.getCode(),
                 new String[]{userDto.getId().toString()}, locale));
