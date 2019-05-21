@@ -17,11 +17,11 @@ public interface PropertyAuditableService {
 
     Property save(Property property, Locale locale, String username);
 
-    Optional<Property> findPropertyById(Long id, Locale locale);
+    Optional<Property> findPropertyById(String id, Locale locale);
 
     List<Property> findByPropertyStatus(PropertyStatus propertyStatus, Locale locale);
 
-    void delete(Long id, Locale locale, String username);
+    void delete(String id, Locale locale, String username);
 
     Stream<Property> search(PropertyWrapper propertyWrapper, Locale locale, String username);
 

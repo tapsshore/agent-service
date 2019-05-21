@@ -9,7 +9,7 @@ import java.util.Locale;
 
 public interface PropertyProcessor {
 
-    PropertyResponse searchPropertyById(Long id, Locale locale);
+    PropertyResponse searchPropertyById(String id, Locale locale);
 
     PropertyResponse search(PropertyWrapper propertyWrapper, Locale locale, String username);
 
@@ -23,5 +23,5 @@ public interface PropertyProcessor {
 
     PropertyResponse updateProperty(PropertyDto propertyDto, Locale locale, String username);
 
-    PropertyResponse deleteProperty(Long id, Locale locale, String username);
+    PropertyResponse deleteProperty(String id, Locale locale, String username);
 }

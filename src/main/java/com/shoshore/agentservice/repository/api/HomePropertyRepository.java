@@ -11,7 +11,7 @@ import java.util.Optional;
 
 public interface HomePropertyRepository extends JpaRepository<Property, Long>{
 
-    Optional<Property> findPropertyById(Long id);
+    Optional<Property> findPropertyById(String id);
 
     List<Property> findByPropertyStatus(PropertyStatus propertyStatus);
 
@@ -22,4 +22,6 @@ public interface HomePropertyRepository extends JpaRepository<Property, Long>{
     List<Property> findPropertiesBySuburb(String suburb);
 
     Property save(Property property);
+
+    void deleteById(String id);
 }

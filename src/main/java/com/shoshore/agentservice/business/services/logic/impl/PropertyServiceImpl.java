@@ -42,7 +42,7 @@ public class PropertyServiceImpl implements PropertyService {
     }
 
     @Override
-    public ServiceResponse<PropertyDto> findPropertyById(Long id, Locale locale) {
+    public ServiceResponse<PropertyDto> findPropertyById(String  id, Locale locale) {
 
         final ServiceResponse serviceResponse = new ServiceResponse();
 
@@ -187,7 +187,7 @@ public class PropertyServiceImpl implements PropertyService {
     }
 
     @Override
-    public ServiceResponse<PropertyDto> delete(Long id, Locale locale, String username) {
+    public ServiceResponse<PropertyDto> delete(String id, Locale locale, String username) {
         final ServiceResponse serviceResponse = new ServiceResponse();
 
         final Optional<Property> usersSearched;

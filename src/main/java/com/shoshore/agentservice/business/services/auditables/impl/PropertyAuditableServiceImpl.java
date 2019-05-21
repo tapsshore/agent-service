@@ -27,7 +27,7 @@ public class PropertyAuditableServiceImpl implements PropertyAuditableService {
     }
 
     @Override
-    public Optional<Property> findPropertyById(Long id, Locale locale) {
+    public Optional<Property> findPropertyById(String id, Locale locale) {
         return propertyRepository.findPropertyById(id);
     }
 
@@ -37,7 +37,7 @@ public class PropertyAuditableServiceImpl implements PropertyAuditableService {
     }
 
     @Override
-    public void delete(Long id, Locale locale, String username) {
+    public void delete(String id, Locale locale, String username) {
         propertyRepository.deleteById(id);
     }
 

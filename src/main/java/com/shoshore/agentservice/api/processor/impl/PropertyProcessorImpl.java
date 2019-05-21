@@ -32,7 +32,7 @@ public class PropertyProcessorImpl implements PropertyProcessor {
     Logger log = LoggerFactory.getLogger(PropertyProcessorImpl.class.getName());
 
     @Override
-    public PropertyResponse searchPropertyById(Long id, Locale locale) {
+    public PropertyResponse searchPropertyById(String id, Locale locale) {
 
         log.info("Property Search Request in: {}", id);
 
@@ -152,7 +152,7 @@ public class PropertyProcessorImpl implements PropertyProcessor {
     }
 
     @Override
-    public PropertyResponse deleteProperty(Long id, Locale locale, String username) {
+    public PropertyResponse deleteProperty(String id, Locale locale, String username) {
 
         log.info("Delete Property Request: {}", id);
 

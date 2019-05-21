@@ -9,7 +9,7 @@ import java.util.Locale;
 
 public interface UserProcessor {
 
-    UserResponse searchUserById(Long id, Locale locale);
+    UserResponse searchUserById(String id, Locale locale);
 
     UserResponse search(UserWrapper userWrapper, Locale locale);
 
@@ -27,5 +27,5 @@ public interface UserProcessor {
 
     UserResponse createUser(UserDto userDto, Locale locale, String username);
 
-    UserResponse deleteUser(Long id, Locale locale, String username);
+    UserResponse deleteUser(String id, Locale locale, String username);
 }

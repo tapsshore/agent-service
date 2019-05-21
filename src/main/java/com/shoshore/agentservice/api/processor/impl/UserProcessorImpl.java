@@ -33,7 +33,7 @@ public class UserProcessorImpl implements UserProcessor {
     Logger log = LoggerFactory.getLogger(UserProcessorImpl.class.getName());
 
     @Override
-    public UserResponse searchUserById(Long id, Locale locale) {
+    public UserResponse searchUserById(String id, Locale locale) {
         log.info("User Search Request in: {}", id);
 
         ServiceResponse<UserDto> serviceResponse = userService.findUserById(id, locale);
@@ -182,7 +182,7 @@ public class UserProcessorImpl implements UserProcessor {
     }
 
     @Override
-    public UserResponse deleteUser(Long id, Locale locale, String username) {
+    public UserResponse deleteUser(String id, Locale locale, String username) {
         log.info("Delete User Request: {}", id);
 
         ServiceResponse<UserDto> serviceResponse  = userService.delete(id , locale, username);

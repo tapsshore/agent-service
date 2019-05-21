@@ -9,5 +9,5 @@ import java.util.Locale;
 public interface PropertyValidation {
     CommonResponse validate(Property property, UserAction userAction, Locale locale, String username);
 
-    CommonResponse validateById(Long id, Locale locale, String username);
+    CommonResponse validateById(String id, Locale locale, String username);
 }

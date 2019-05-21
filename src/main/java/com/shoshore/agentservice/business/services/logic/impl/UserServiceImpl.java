@@ -78,7 +78,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public ServiceResponse findUserById(Long id, Locale locale) {
+    public ServiceResponse findUserById(String id, Locale locale) {
         final ServiceResponse serviceResponse = new ServiceResponse();
 
         final Optional<User> userSearched = userAuditableService.findUserById(id,locale);
@@ -105,7 +105,7 @@ public class UserServiceImpl implements UserService {
     public ServiceResponse findUserByMobileNumber(String mobileNumber, Locale locale) {
         final ServiceResponse serviceResponse = new ServiceResponse();
 
-        final Optional<User> userSearched = userRepository.findUserByMobileNumber(mobileNumber);
+        final Optional<User> userSearched = userAuditableService.findUserByMobileNumber(mobileNumber, locale);
 
         final boolean isUserFound = userSearched.isPresent();
         if (!isUserFound) {
@@ -117,7 +117,7 @@ public class UserServiceImpl implements UserService {
         }
         serviceResponse.setSuccess(true);
 
-        serviceResponse.setResult(dtoMapper.map(serviceResponse));
+        serviceResponse.setUser(userSearched.get());
 
         serviceResponse.setMessage(messageService.getMessage(I18Code.MESSAGE_USER_SUCCESSFULLY_RETRIEVED.getCode(),
                 new String [] {}, locale));
@@ -164,7 +164,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public ServiceResponse delete(Long id, Locale locale, String username) {
+    public ServiceResponse delete(String id, Locale locale, String username) {
         final ServiceResponse serviceResponse = new ServiceResponse();
 
         final Optional<User> usersSearched;

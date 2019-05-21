@@ -13,7 +13,7 @@ public interface UserService {
 
     ServiceResponse findUserByIdNumber(String idNumber, Locale locale);
 
-    ServiceResponse findUserById(Long id, Locale locale);
+    ServiceResponse findUserById(String id, Locale locale);
 
     ServiceResponse findUserByMobileNumber(String mobileNumber, Locale locale);
 
@@ -21,7 +21,7 @@ public interface UserService {
 
     ServiceResponse edit(UserDto userDto, Locale locale, String username);
 
-    ServiceResponse delete(Long id, Locale locale, String username);
+    ServiceResponse delete(String id, Locale locale, String username);
 
     ServiceResponse search(UserWrapper userWrapper, Locale locale);
 

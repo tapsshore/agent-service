@@ -8,7 +8,7 @@ import java.util.Date;
 
 public class PropertyDto {
 
-    private Long id;
+    private String id;
     private PropertyStatus propertyStatus;
     private PropertyType propertyType;
     private Integer numberOfRooms;
@@ -21,11 +21,11 @@ public class PropertyDto {
     private Date dateCreated;
     private Date dateLastUpdated;
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

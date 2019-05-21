@@ -48,7 +48,7 @@ public class UserValidationImpl implements UserValidation {
     }
 
     @Override
-    public CommonResponse validateById(Long id, Locale locale, String username) {
+    public CommonResponse validateById(String id, Locale locale, String username) {
         final CommonResponse response;
 
 
@@ -76,7 +76,7 @@ public class UserValidationImpl implements UserValidation {
         return response;
     }
 
-    private CommonResponse validateUserDelete(final Long id, Locale locale) {
+    private CommonResponse validateUserDelete(final String id, Locale locale) {
         final CommonResponse response = new CommonResponse();
         final Optional<User> existingUser = userAuditableService.findUserById(id,locale);
         final boolean isUserNotFound = !existingUser.isPresent();
@@ -92,7 +92,7 @@ public class UserValidationImpl implements UserValidation {
 
     private CommonResponse validateUserCreation(User entity, Locale locale) {
         final CommonResponse response = new CommonResponse();
-        final Long id = entity.getId();
+        final String id = entity.getId();
         final Optional<User> existingUser = userAuditableService.findUserById(entity.getId(),locale);
         final boolean isExistingUser = existingUser.isPresent();
         if (isExistingUser) {

@@ -3,7 +3,7 @@ package com.shoshore.agentservice.utils.messages.external;
 import java.util.Date;
 
 public class UserDto {
-    private Long id;
+    private String id;
     private String firstName;
     private String lastName;
     private Date dateOfBirth;
@@ -17,11 +17,11 @@ public class UserDto {
     private Date dateLastUpdated;
 
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

@@ -3,6 +3,7 @@ package com.shoshore.agentservice.domain;
 import com.shoshore.agentservice.utils.enums.PropertyStatus;
 import com.shoshore.agentservice.utils.enums.PropertyType;
 import com.shoshore.agentservice.utils.keygen.KeyGen;
+import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -10,10 +11,17 @@ import java.util.Date;
 
 @Entity
 @Table(name = "properties")
-public class Property {
+public class Property  {
 
     @Id
-    private Long id;
+    @GeneratedValue(
+            generator = "UUID"
+    )
+    @GenericGenerator(
+            name = "UUID",
+            strategy = "org.hibernate.id.UUIDGenerator"
+    )
+    private String id;
     @Column(name = "property_status")
     @Enumerated(EnumType.STRING)
     private PropertyStatus propertyStatus;
@@ -41,11 +49,11 @@ public class Property {
     @ManyToOne
     private User user;
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -148,7 +156,7 @@ public class Property {
     @Override
     public String toString() {
         return "Property{" +
-                "id=" + id +
+                "id='" + id + '\'' +
                 ", propertyStatus=" + propertyStatus +
                 ", propertyType=" + propertyType +
                 ", numberOfRooms=" + numberOfRooms +
@@ -163,11 +171,10 @@ public class Property {
                 ", user=" + user +
                 '}';
     }
+
     @PrePersist
     private void init(){
-        if (id == null || id == 0){
-            id = KeyGen.getUniqueId();
-        }
+
         if (dateCreated == null){
             dateCreated = new Date();
         }
@@ -182,4 +189,6 @@ public class Property {
             setDateLastUpdated(new Date());
         }
     }
+
+
 }

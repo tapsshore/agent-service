@@ -11,7 +11,7 @@ import java.util.Locale;
 public interface PropertyService {
 
 
-    ServiceResponse<PropertyDto> findPropertyById(Long id, Locale locale);
+    ServiceResponse<PropertyDto> findPropertyById(String id, Locale locale);
 
     ServiceResponse<PropertyDto> findPropertiesByPropertyStatus(PropertyStatus propertyStatus, Locale locale);
 
@@ -25,7 +25,7 @@ public interface PropertyService {
 
     PropertyResponse search(PropertyWrapper propertyWrapper, Locale locale, String username);
 
-    ServiceResponse<PropertyDto> delete(Long id, Locale locale, String username);
+    ServiceResponse<PropertyDto> delete(String id, Locale locale, String username);
 
     ServiceResponse<PropertyDto> findAllProperties(Locale locale);
 

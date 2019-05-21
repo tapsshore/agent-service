@@ -2,6 +2,9 @@ package com.shoshore.agentservice.domain;
 
 import com.shoshore.agentservice.utils.enums.UserStatus;
 import com.shoshore.agentservice.utils.keygen.KeyGen;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -11,41 +14,52 @@ import java.util.Set;
 @Entity
 @Table(name = "users")
 public class User {
+
     @Id
-    private Long id;
+    @GeneratedValue(
+            generator = "UUID"
+    )
+    @GenericGenerator(
+            name = "UUID",
+            strategy = "org.hibernate.id.UUIDGenerator"
+    )
+    private String id;
     @Column(name = "first_name")
     private String firstName;
     @Column(name = "last_name")
     private String lastName;
     @Column(name = "date_of_birth")
     private Date dateOfBirth;
-    @Column(name = "id_number")
+    @Column(name = "id_number", unique = true)
     private String idNumber;
     @Column(name = "gender")
     private String gender;
-    @Column(name = "mobile_number")
+    @Column(name = "mobile_number", unique = true)
     private String mobileNumber;
     @Column(name = "city")
     private String city;
     @Column(name = "userStatus")
     @Enumerated(EnumType.STRING)
     private UserStatus userStatus;
-     @Column(name = "home_address")
+    @Column(name = "home_address")
     private String homeAddress;
     @Column(name = "email_address")
     private String emailAddress;
-    @Temporal(TemporalType.TIMESTAMP)
+    @CreationTimestamp
     private Date dateCreated;
-    @Temporal(TemporalType.TIMESTAMP)
+    @UpdateTimestamp
     private Date dateLastUpdated;
     @OneToMany(mappedBy = "user")
     private Set<Property> properties;
 
-    public Long getId() {
+    private Date createdDate;
+
+
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -146,7 +160,6 @@ public class User {
     }
 
 
-
     public UserStatus getUserStatus() {
         return userStatus;
     }
@@ -156,23 +169,22 @@ public class User {
     }
 
     @PrePersist
-    private void init(){
-        if (id == null || id == 0){
-            id = KeyGen.getUniqueId();
-        }
-        if (dateCreated == null){
+    private void init() {
+
+        if (dateCreated == null) {
             dateCreated = new Date();
         }
-        if (dateLastUpdated == null){
+        if (dateLastUpdated == null) {
             setDateLastUpdated(new Date());
         }
-        if (userStatus==null){
+        if (userStatus == null) {
             setUserStatus(UserStatus.ACTIVE);
         }
     }
+
     @PreUpdate
-    private void reload(){
-        if (dateLastUpdated == null){
+    private void reload() {
+        if (dateLastUpdated == null) {
             setDateLastUpdated(new Date());
         }
     }
@@ -180,7 +192,7 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
+                "id='" + id + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", dateOfBirth=" + dateOfBirth +
@@ -194,7 +206,6 @@ public class User {
                 ", dateCreated=" + dateCreated +
                 ", dateLastUpdated=" + dateLastUpdated +
                 ", properties=" + properties +
-
                 '}';
     }
 }

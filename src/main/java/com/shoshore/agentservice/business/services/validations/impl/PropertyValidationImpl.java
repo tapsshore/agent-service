@@ -49,7 +49,7 @@ public class PropertyValidationImpl implements PropertyValidation {
     }
 
     @Override
-    public CommonResponse validateById(Long id, Locale locale, String username) {
+    public CommonResponse validateById(String id, Locale locale, String username) {
         final CommonResponse response;
 
 
@@ -78,7 +78,7 @@ public class PropertyValidationImpl implements PropertyValidation {
         return response;
     }
 
-    private CommonResponse validatePropertyDelete(final Long id, Locale locale) {
+    private CommonResponse validatePropertyDelete(final String id, Locale locale) {
         final CommonResponse response = new CommonResponse();
         final Optional<Property> existingProperty = propertyAuditableService.findPropertyById(id,locale);
         final boolean isPropertyNotFound = !existingProperty.isPresent();
@@ -94,7 +94,7 @@ public class PropertyValidationImpl implements PropertyValidation {
 
     private CommonResponse validatePropertyCreation(Property entity, Locale locale) {
         final CommonResponse response = new CommonResponse();
-        final Long id = entity.getId();
+        final String id = entity.getId();
         final Optional<Property> existingProperty = propertyAuditableService.findPropertyById(entity.getId(),locale);
         final boolean isExistingProperty = existingProperty.isPresent();
         if (isExistingProperty) {

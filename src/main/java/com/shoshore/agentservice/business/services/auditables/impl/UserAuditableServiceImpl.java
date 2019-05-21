@@ -15,7 +15,7 @@ import java.util.stream.Stream;
 public class UserAuditableServiceImpl implements UserAuditableService {
     private UserRepository userRepository;
 
-    public UserAuditableServiceImpl(UserRepository userRepository){
+    public UserAuditableServiceImpl(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
@@ -36,11 +36,11 @@ public class UserAuditableServiceImpl implements UserAuditableService {
 
     @Override
     public List<User> findUsersByCityOrGender(String city, String gender, Locale locale) {
-        return userRepository.findUsersByCityOrGender(city,gender);
+        return userRepository.findUsersByCityOrGender(city, gender);
     }
 
     @Override
-    public Optional<User> findUserById(Long id, Locale locale) {
+    public Optional<User> findUserById(String id, Locale locale) {
         return userRepository.findUserById(id);
     }
 

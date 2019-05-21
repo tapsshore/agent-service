@@ -56,7 +56,7 @@ public class UserResource {
     @ApiOperation(value = "Find User by id", response = UserResponse.class)
     @GetMapping(value = "/{id}", produces = {MediaType.APPLICATION_JSON_VALUE},
             consumes = {MediaType.APPLICATION_JSON_VALUE})
-    public UserResponse findUserRecordById(@PathVariable("id") final Long id,
+    public UserResponse findUserRecordById(@PathVariable("id") final String id,
                                            @ApiParam(value = Constants.SOURCE_TYPE_NARRATIVE) @RequestHeader(value = Constants.SOURCE_TYPE, required = false) final String username,
                                            @ApiParam(value = Constants.LOCALE_LANGUAGE_NARRATIVE) @RequestHeader(value = Constants.LOCALE_LANGUAGE,
                                                    defaultValue = Constants.DEFAULT_LOCALE) final Locale locale) {
@@ -68,8 +68,8 @@ public class UserResource {
     @ApiOperation(value = "Find User by Mobile Number", response = UserResponse.class)
     @GetMapping(value = "/mobileNumber/{mobileNumber}", produces = {MediaType.APPLICATION_JSON_VALUE},
             consumes = {MediaType.APPLICATION_JSON_VALUE})
-    public UserResponse findUserRecordByMobileNumber(@PathVariable("mobileNumber") final Long id,
-                                           @ApiParam(value = Constants.SOURCE_TYPE_NARRATIVE) @RequestHeader(value = Constants.SOURCE_TYPE, required = false) final String mobileNumber,
+    public UserResponse findUserRecordByMobileNumber(@PathVariable("mobileNumber") final String mobileNumber,
+//                                           @ApiParam(value = Constants.SOURCE_TYPE_NARRATIVE) @RequestHeader(value = Constants.SOURCE_TYPE, required = false) final String mobileNumber,
                                            @ApiParam(value = Constants.LOCALE_LANGUAGE_NARRATIVE) @RequestHeader(value = Constants.LOCALE_LANGUAGE,
                                                    defaultValue = Constants.DEFAULT_LOCALE) final Locale locale) {
 
@@ -80,8 +80,8 @@ public class UserResource {
     @ApiOperation(value = "Find User by ID Number", response = UserResponse.class)
     @GetMapping(value = "/idNumber/{idNumber}", produces = {MediaType.APPLICATION_JSON_VALUE},
             consumes = {MediaType.APPLICATION_JSON_VALUE})
-    public UserResponse findUserRecordByIdNumber(@PathVariable("idNumber") final Long id,
-                                                     @ApiParam(value = Constants.SOURCE_TYPE_NARRATIVE) @RequestHeader(value = Constants.SOURCE_TYPE, required = false) final String idNumber,
+    public UserResponse findUserRecordByIdNumber(@PathVariable("idNumber") final String idNumber,
+//                                                     @ApiParam(value = Constants.SOURCE_TYPE_NARRATIVE) @RequestHeader(value = Constants.SOURCE_TYPE, required = false) final String idNumber,
                                                      @ApiParam(value = Constants.LOCALE_LANGUAGE_NARRATIVE) @RequestHeader(value = Constants.LOCALE_LANGUAGE,
                                                              defaultValue = Constants.DEFAULT_LOCALE) final Locale locale) {
 
@@ -92,8 +92,8 @@ public class UserResource {
     @ApiOperation(value = "Find User by User Status", response = UserResponse.class)
     @GetMapping(value = "/userStatus/{userStatus}", produces = {MediaType.APPLICATION_JSON_VALUE},
             consumes = {MediaType.APPLICATION_JSON_VALUE})
-    public UserResponse findUsersByUserStatus(@PathVariable("userStatus") final Long id,
-                                                 @ApiParam(value = Constants.SOURCE_TYPE_NARRATIVE) @RequestHeader(value = Constants.SOURCE_TYPE, required = false) final UserStatus userStatus,
+    public UserResponse findUsersByUserStatus(@PathVariable("userStatus") final UserStatus userStatus,
+//                                                 @ApiParam(value = Constants.SOURCE_TYPE_NARRATIVE) @RequestHeader(value = Constants.SOURCE_TYPE, required = false) final UserStatus userStatus,
                                                  @ApiParam(value = Constants.LOCALE_LANGUAGE_NARRATIVE) @RequestHeader(value = Constants.LOCALE_LANGUAGE,
                                                          defaultValue = Constants.DEFAULT_LOCALE) final Locale locale) {
 
@@ -104,8 +104,8 @@ public class UserResource {
     @ApiOperation(value = "Find User by City or Gender", response = UserResponse.class)
     @GetMapping(value = "/city/{city}/gender/{gender}", produces = {MediaType.APPLICATION_JSON_VALUE},
             consumes = {MediaType.APPLICATION_JSON_VALUE})
-    public UserResponse findUsersByUserStatus(@PathVariable("city") final String city, @PathVariable("gender") final String gender,
-                                              @ApiParam(value = Constants.SOURCE_TYPE_NARRATIVE) @RequestHeader(value = Constants.SOURCE_TYPE, required = false) final UserStatus userStatus,
+    public UserResponse findUsersByCityOrGender(@PathVariable("city") final String city, @PathVariable("gender") final String gender,
+//                                              @ApiParam(value = Constants.SOURCE_TYPE_NARRATIVE) @RequestHeader(value = Constants.SOURCE_TYPE, required = false) final UserStatus userStatus,
                                               @ApiParam(value = Constants.LOCALE_LANGUAGE_NARRATIVE) @RequestHeader(value = Constants.LOCALE_LANGUAGE,
                                                       defaultValue = Constants.DEFAULT_LOCALE) final Locale locale) {
 
@@ -131,7 +131,7 @@ public class UserResource {
     @ApiOperation(value = "Delete User", response = UserResponse.class)
     @DeleteMapping(value = "/{userId}", produces = {MediaType.APPLICATION_JSON_VALUE},
             consumes = {MediaType.APPLICATION_JSON_VALUE})
-    public UserResponse deleteUser(@PathVariable("userId") final Long id,
+    public UserResponse deleteUser(@PathVariable("userId") final String id,
                                    @ApiParam(value = Constants.SOURCE_TYPE_NARRATIVE) @RequestHeader(value = Constants.SOURCE_TYPE, required = false) final String sourceType,
                                    @ApiParam(value = Constants.SOURCE_NAME_NARRATIVE) @RequestHeader(value = Constants.SOURCE_NAME, required = false) final String sourceName,
                                    @RequestHeader(value = Constants.SOURCE_NAME_NARRATIVE, required = false) final String username,

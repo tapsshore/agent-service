@@ -22,7 +22,7 @@ public interface UserAuditableService {
 
     List<User> findUsersByCityOrGender(String city, String gender, Locale locale);
 
-    Optional<User> findUserById(Long id, Locale locale);
+    Optional<User> findUserById(String id, Locale locale);
 
     void delete(Long id, Locale locale, String username);
 
