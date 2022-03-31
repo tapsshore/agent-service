@@ -20,7 +20,7 @@
         <java.version>1.8</java.version>
         <org.mapstruct.version>1.2.0.Final</org.mapstruct.version>
         <spring-swagger.version>2.6.1</spring-swagger.version>
-        <spring-boot-starter-test.version>2.1.2.RELEASE</spring-boot-starter-test.version>
+        <spring-boot-starter-test.version>2.5.12</spring-boot-starter-test.version>
     </properties>
 
 
